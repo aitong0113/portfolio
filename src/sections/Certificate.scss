@@ -1,0 +1,105 @@
+@use "../styles/variables" as *;
+
+.certificate {
+  padding: 120px 0;
+
+
+  /* ⭐ 滿版關鍵（跟 hero 一樣） */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  &__inner {
+    padding: 0 80px; // ⭐ 控制左右邊距（這才是新 container）
+  }
+
+  &__masonry {
+    column-count: 3;
+    column-gap: 30px;
+  }
+}
+/* 卡片 */
+
+.certificate-card {
+  break-inside: avoid;
+  margin-bottom: 24px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  &__content {
+    padding: 20px;
+
+    h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 13px;
+      color: $color-text-light;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+/* tag */
+
+.certificate-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+
+  span {
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: #f3eee8;
+    color: #8a7b72;
+  }
+}
+
+/* 標題 */
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: $color-text-light;
+  margin-bottom: 50px;
+}
+
+/* RWD */
+
+@media (max-width: 900px) {
+  .certificate__masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .certificate__masonry {
+    column-count: 1;
+  }
+}

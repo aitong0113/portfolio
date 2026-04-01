@@ -1,0 +1,38 @@
+// 品牌色（來自 Hero 圖）
+// UI 主色：酒紅
+$color-primary: #a05c54; // 酒紅（右下角深色）
+$color-primary-dark: #7d3d36;
+$color-primary-light: #c08a82;
+
+// 輔助色：藍灰、粉橘、橘黃
+$color-secondary: #bfcad6; // 藍灰
+$color-secondary-dark: #a7b5c2;
+$color-secondary-light: #d6dde7;
+$color-accent: #e8a78c; // 粉橘
+$color-accent2: #ebc38b; // 橘黃點綴
+
+// 基礎底色
+$color-bg: #faf8f4; // 全站背景
+$color-surface: #f2ede7; // 卡片 / 區塊底
+$color-border: #e1d7c7;
+
+$color-white: #ffffff;
+
+// 文字
+$color-text: #3a3a3a;
+$color-text-light: #7a7a7a;
+
+// 按鈕（主色為藍灰）
+$btn-bg: $color-primary;
+$btn-bg-hover: darken($btn-bg, 6%);
+$btn-text: $color-white;
+$btn-border: transparent;
+
+// 間距
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 40px;
+
+$font-main: 'Noto Sans TC', 'Helvetica Neue', Arial, sans-serif;
+$font-heading: 'Playfair Display', serif;

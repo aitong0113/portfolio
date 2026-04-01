@@ -1,0 +1,741 @@
+// ================================================
+//  Contact Page — Contact.scss
+//  Abbie Lin Portfolio
+// ================================================
+
+.contact {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: #f8f4f1;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 100px 0 120px;
+
+  // container 負責水平 padding，背景不受限
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 72px;
+    align-items: start;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ─────────────────── 裝飾 ─────────────────── */
+
+  .contact-deco {
+    position: absolute;
+    top: -60px;
+    right: -40px;
+    width: 380px;
+    height: 320px;
+    background: linear-gradient(140deg, #e8cfc2, #d4b5a4);
+    border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+    opacity: 0.55;
+    pointer-events: none;
+  }
+
+  .contact-deco-2 {
+    position: absolute;
+    top: 200px;
+    right: 60px;
+    width: 110px;
+    height: 110px;
+    background: #c8a898;
+    border-radius: 50%;
+    opacity: 0.22;
+    pointer-events: none;
+  }
+
+  .contact-deco-3 {
+    position: absolute;
+    bottom: -60px;
+    left: -80px;
+    width: 320px;
+    height: 320px;
+    background: linear-gradient(160deg, #f0e4db, #e2d0c4);
+    border-radius: 50%;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  .contact-deco-4 {
+    position: absolute;
+    bottom: 80px;
+    left: 38%;
+    width: 65px;
+    height: 65px;
+    background: #ddc8ba;
+    border-radius: 50%;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  // 散落小圓點
+  .dot {
+    position: absolute;
+    border-radius: 50%;
+    background: #c48a6a;
+    pointer-events: none;
+
+    &-1 {
+      width: 8px;
+      height: 8px;
+      top: 80px;
+      left: 30%;
+      opacity: 0.2;
+    }
+    &-2 {
+      width: 5px;
+      height: 5px;
+      top: 160px;
+      right: 36%;
+      opacity: 0.15;
+    }
+    &-3 {
+      width: 6px;
+      height: 6px;
+      bottom: 140px;
+      right: 28%;
+      opacity: 0.15;
+    }
+  }
+
+  /* ─────────────────── 左側 ─────────────────── */
+
+  .contact-left {
+    // CONTACT eyebrow label
+    .label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #b89080;
+      margin-bottom: 14px;
+
+      &::before {
+        content: "";
+        width: 28px;
+        height: 1px;
+        background: #c48a6a;
+        opacity: 0.6;
+        flex-shrink: 0;
+      }
+    }
+
+    // 主標題
+    h1 {
+      display: block;
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      line-height: 1.25;
+      color: #2e211b;
+      margin-bottom: 12px;
+
+      span {
+        color: #c48a6a;
+        font-style: italic;
+        display: inline; // 保持 inline 包在標題文字流中
+      }
+    }
+
+    .subtitle {
+      font-size: 0.88rem;
+      color: #9a8078;
+      font-weight: 300;
+      line-height: 1.75;
+      margin-bottom: 36px;
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: #2e211b;
+      margin-bottom: 8px;
+    }
+
+    .desc {
+      font-size: 0.88rem;
+      color: #7a6860;
+      font-weight: 300;
+      line-height: 1.8;
+      margin-bottom: 28px;
+      text-align: left;
+    }
+  }
+
+  /* ─────────────────── 聯絡卡片 ─────────────────── */
+
+  .contact-item {
+    display: flex;
+    align-items: start;
+    gap: 16px;
+    padding: 15px 20px;
+    border-radius: 14px;
+    background: #fff;
+    border: 1px solid rgba(196, 138, 106, 0.15);
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: inherit;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      border-color 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 36px rgba(46, 33, 27, 0.08);
+      border-color: rgba(196, 138, 106, 0.35);
+
+      .contact-item-icon {
+        background: rgba(196, 138, 106, 0.2);
+      }
+      .contact-item-arrow {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    // icon 容器：固定尺寸 + flex 置中，svg 不會跑位
+    &-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 11px;
+      background: rgba(196, 138, 106, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background 0.3s;
+
+      svg {
+        color: #c48a6a;
+        width: 18px;
+        height: 18px;
+        display: block; // 消除 inline svg 的底部空白
+      }
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      align-items: start;
+
+      p {
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: #2e211b;
+        line-height: 1.2;
+        margin: 0;
+      }
+
+      span {
+        font-size: 0.75rem;
+        color: #9a8078;
+        font-weight: 300;
+        line-height: 1.2;
+      }
+      .contact-desc {
+        font-size: 0.72rem;
+        color: #d4d4d4;
+        line-height: 1.4;
+      }
+    }
+
+    // hover 滑入箭頭
+    &-arrow {
+      margin-left: auto;
+      flex-shrink: 0;
+      opacity: 0;
+      transform: translateX(-6px);
+      transition: all 0.3s ease;
+
+      svg {
+        color: #c48a6a;
+        width: 14px;
+        height: 14px;
+        display: block;
+      }
+    }
+  }
+
+  /* ─────────────────── 履歷卡 ─────────────────── */
+
+  .resume-card {
+    background: linear-gradient(145deg, #2e211b, #3c2b24);
+    color: #fff;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 24px 56px rgba(46, 33, 27, 0.28);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 200px;
+      height: 200px;
+      background: rgba(196, 138, 106, 0.1);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -40px;
+      left: -40px;
+      width: 140px;
+      height: 140px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .resume-eyebrow {
+      font-size: 10px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #9a8078;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    h3 {
+      font-size: 1.7rem;
+      line-height: 1.2;
+      margin-bottom: 0;
+      position: relative;
+      z-index: 1;
+
+      em {
+        font-style: italic;
+        color: #d4a088;
+      }
+    }
+
+    .resume-desc {
+      font-size: 0.83rem;
+      color: #c4b0a8;
+      font-weight: 300;
+      line-height: 1.75;
+      margin: 12px 0 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .resume-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+
+      span {
+        background: rgba(255, 255, 255, 0.07);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 5px 12px;
+        border-radius: 999px;
+        font-size: 11px;
+        color: #e0d0c8;
+        letter-spacing: 0.03em;
+      }
+    }
+
+    .resume-actions {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .resume-divider {
+      height: 1px;
+      background: rgba(255, 255, 255, 0.07);
+      margin: 20px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .resume-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .resume-update {
+      font-size: 11px;
+      color: #7a6860;
+      letter-spacing: 0.05em;
+    }
+
+    .resume-lang {
+      display: flex;
+      gap: 6px;
+    }
+  }
+
+  /* ─────────────────── 按鈕 ─────────────────── */
+
+  .btn {
+    // 修正：inline-flex 讓 icon + 文字垂直置中，不再偏移
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 11px 20px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+
+    svg {
+      width: 15px;
+      height: 15px;
+      display: block;
+      flex-shrink: 0;
+    }
+
+    &.primary {
+      background: #c48a6a;
+      color: #fff;
+      border: none;
+      box-shadow: 0 4px 16px rgba(196, 138, 106, 0.35);
+
+      &:hover {
+        background: #b5775a;
+        box-shadow: 0 6px 22px rgba(196, 138, 106, 0.45);
+      }
+    }
+
+    &.ghost {
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #e0d0c8;
+      background: transparent;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.07);
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+    }
+  }
+
+  .lang-btn {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #c4b0a8;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &.active,
+    &:hover {
+      background: rgba(196, 138, 106, 0.2);
+      border-color: rgba(196, 138, 106, 0.3);
+      color: #e0c8b8;
+    }
+  }
+
+  /* ─────────────────── RWD ─────────────────── */
+
+  @media (max-width: 900px) {
+    padding: 80px 0 100px;
+
+    .container {
+      padding: 0 24px;
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+
+    .resume-card {
+      width: 100%;
+    }
+
+    .contact-deco {
+      width: 240px;
+      height: 200px;
+      opacity: 0.4;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 60px 0 80px;
+
+    .container {
+      padding: 0 20px;
+    }
+
+    .contact-left h1 {
+      font-size: 2rem;
+    }
+
+    .resume-actions {
+      flex-direction: column;
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* ================================================
+   Resume Modal
+================================================ */
+
+.resume-modal-overlay {
+  position: fixed;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  inset: 0;
+  background: rgba(20, 12, 8, 0.75);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+  padding-top: 10px;
+  overflow-y: auto;
+}
+
+.resume-modal-box {
+  background: #f8f4f1;
+  border-radius: 18px;
+  width: min(900px, 95vw);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.1rem 1.5rem;
+  border-bottom: 1px solid rgba(196, 138, 106, 0.18);
+  background: #fff;
+
+  h4 {
+    font-size: 1rem;
+    color: #2e211b;
+    margin: 0;
+  }
+
+  &-meta {
+    font-size: 0.72rem;
+    color: #9a8078;
+    margin-top: 2px;
+  }
+}
+
+.modal-close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(196, 138, 106, 0.25);
+  background: transparent;
+  cursor: pointer;
+  color: #9a8078;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+
+  &:hover {
+    background: #2e211b;
+    color: #fff;
+    border-color: #2e211b;
+  }
+}
+
+.modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+   min-height: 0;    
+}
+
+.resume-preview {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 2.2rem;
+  border: 1px solid rgba(196, 138, 106, 0.15);
+}
+
+.rp-header {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  margin-bottom: 1.4rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 2px solid #c48a6a;
+}
+
+.rp-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e8c9b8, #c4896b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.rp-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2e211b;
+}
+.rp-role {
+  font-size: 0.7rem;
+  color: #c48a6a;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0.15rem 0;
+}
+.rp-contact {
+  font-size: 0.68rem;
+  color: #9a8078;
+  font-weight: 300;
+}
+
+.rp-section {
+  margin-bottom: 1.1rem;
+}
+
+.rp-section-title {
+  font-size: 0.67rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #c48a6a;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid rgba(196, 138, 106, 0.2);
+}
+
+.rp-text {
+  font-size: 0.77rem;
+  color: #7a6860;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+.rp-skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.rp-skill {
+  font-size: 0.68rem;
+  padding: 0.18rem 0.5rem;
+  border-radius: 100px;
+  background: rgba(196, 138, 106, 0.1);
+  color: #c48a6a;
+}
+
+.rp-exp-item {
+  margin-bottom: 0.6rem;
+
+  & + & {
+    margin-top: 0.7rem;
+  }
+}
+
+.rp-exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.rp-exp-title {
+  font-size: 0.83rem;
+  font-weight: 500;
+  color: #2e211b;
+}
+.rp-exp-date {
+  font-size: 0.68rem;
+  color: #9a8078;
+}
+.rp-exp-sub {
+  font-size: 0.73rem;
+  color: #c48a6a;
+  margin: 0.12rem 0;
+}
+.rp-exp-desc {
+  font-size: 0.75rem;
+  color: #7a6860;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.modal-footer {
+  padding: 0.9rem 1.5rem;
+  border-top: 1px solid rgba(196, 138, 106, 0.15);
+  display: flex;
+  gap: 0.7rem;
+  justify-content: flex-end;
+  background: #fff;
+}
+
+.modal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.55rem 1.3rem;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  svg {
+    width: 13px;
+    height: 13px;
+    display: block;
+  }
+
+  &-dl {
+    background: #c48a6a;
+    color: #fff;
+    border: none;
+    &:hover {
+      background: #b5775a;
+    }
+  }
+
+  &-close {
+    background: transparent;
+    border: 1px solid rgba(196, 138, 106, 0.3);
+    color: #9a8078;
+    &:hover {
+      border-color: #9a8078;
+    }
+  }
+}

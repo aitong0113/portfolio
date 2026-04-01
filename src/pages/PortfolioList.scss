@@ -1,0 +1,127 @@
+@use "../styles/variables" as *;
+
+//////////////////////////////////////////////////
+// 🌿 外層
+//////////////////////////////////////////////////
+
+.portfolio-page {
+  padding: 120px 0;
+
+}
+
+//////////////////////////////////////////////////
+// ⭐ container（拉寬🔥）
+//////////////////////////////////////////////////
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+//////////////////////////////////////////////////
+// HERO
+//////////////////////////////////////////////////
+
+.portfolio-hero {
+  text-align: center;
+  margin-bottom: 60px;
+
+  .label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #aaa;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin: 10px 0;
+
+    span {
+      color: $color-primary;
+    }
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: #777;
+  }
+}
+
+//////////////////////////////////////////////////
+// FILTER
+//////////////////////////////////////////////////
+
+.portfolio-filter {
+  margin-bottom: 50px;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter-label {
+  width: 50px;
+  font-size: 13px;
+  color: #888;
+}
+
+.filter-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  button {
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      border-color: $color-primary;
+      color: $color-primary;
+    }
+
+    &.active {
+      background: $color-primary;
+      color: #fff;
+      border: none;
+    }
+  }
+}
+
+.divider {
+  height: 1px;
+  background: #eee;
+  margin: 20px 0;
+}
+
+//////////////////////////////////////////////////
+// ⭐ LINK reset（避免藍字🔥）
+//////////////////////////////////////////////////
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+//////////////////////////////////////////////////
+// ⭐ GRID（穩定版🔥）
+//////////////////////////////////////////////////
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;  // 🔥 防止高低錯位
+  margin-top: 40px;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr;
+  }
+}
