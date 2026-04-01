@@ -37,8 +37,7 @@ const projectsDetail = [
     highlight: "完整電商流程實作（購物 → 結帳 → 訂單）",
 
     tech: ["JavaScript", "Firebase", "RWD"],
-    cover:
-      "https:/images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1740&auto=format&fit=crop",
+    cover: images["/src/assets/images/CalmAura.jpeg"],
 
     demo: "https://aitong0113.github.io/CalmAura/",
     github: "https://github.com/aitong0113/CalmAura",
@@ -55,8 +54,7 @@ const projectsDetail = [
     highlight: "後台 CRUD + 圖表分析 + 權限設計",
 
     tech: ["JavaScript", "Firebase", "Chart"],
-    cover:
-      "https://plus.unsplash.com/premium_photo-1679520112650-9c2141d81a2d?w=400",
+    cover: images["/src/assets/images/CalmAura2.jpeg"],
 
     demo: "https://aitong0113.github.io/calmaura-admin/",
     github: "https://github.com/aitong0113/calmaura-admin",
@@ -73,8 +71,7 @@ const projectsDetail = [
     highlight: "Vue3 Composition API + TypeScript 實戰",
 
     tech: ["Vue", "TypeScript", "Firebase"],
-    cover:
-      "https:/images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1740&auto=format&fit=crop",
+    cover: images["/src/assets/images/Yoga.jpeg"],
 
     demo: "https://aitong0113.github.io/TS-yogaf/",
     github: "https://github.com/aitong0113/TS-yogaf",
@@ -91,9 +88,7 @@ const projectsDetail = [
     highlight: "完整後台資料管理與圖片上傳",
 
     tech: ["Vue", "TypeScript", "Firebase"],
-    cover:
-      "https:/images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1740&auto=format&fit=crop",
-
+    cover: images["/src/assets/images/Yoga2.jpeg"],
     demo: "https://aitong0113.github.io/TS-yogab/",
     github: "https://github.com/aitong0113/TS-yogab",
   },

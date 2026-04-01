@@ -37,7 +37,7 @@ const projectList = [
     category: "frontend",
     tech: ["js", "firebase"],
 
-    cover: "https:/images.unsplash.com/photo-1603006905003-be475563bc59",
+    cover: images["/src/assets/images/CalmAura.jpeg"],
 
     desc: "電商前台，重視購物體驗與資料同步",
 
@@ -52,7 +52,7 @@ const projectList = [
     category: "frontend",
     tech: ["js", "firebase"],
 
-    cover: "https://plus.unsplash.com/premium_photo-1679520112650-9c2141d81a2d",
+    cover: images["/src/assets/images/CalmAura2.jpeg"],
 
     desc: "後台支援訂單、權限與圖表管理",
 
@@ -67,7 +67,7 @@ const projectList = [
     category: "frontend",
     tech: ["vue", "ts", "firebase"],
 
-    cover: "https:/images.unsplash.com/photo-1544367567-0f2fcb009e0b",
+    cover: images["/src/assets/images/Yoga.jpeg"],
 
     desc: "Vue + TS 電商前台，分類與結帳流程優化",
 
@@ -82,7 +82,7 @@ const projectList = [
     category: "frontend",
     tech: ["vue", "ts", "firebase"],
 
-    cover: "https:/images.unsplash.com/photo-1506126613408-eca07ce68773",
+    cover: images["/src/assets/images/Yoga2.jpeg"],
 
     desc: "商品、訂單、優惠券管理系統",
 
