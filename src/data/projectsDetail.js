@@ -113,7 +113,7 @@ const projectsDetail = [
   // 記帳 App
   //////////////////////////////////////////////////
   {
-    id: "accounting-app",
+    id: "accounting",
     title: "日常記帳｜收支管理 App",
     subtitle: "Personal Finance Tracker",
     desc: "支援分類、預算與統計的個人記帳工具。",
@@ -181,7 +181,7 @@ const projectsDetail = [
   // RWD Showcase
   //////////////////////////////////////////////////
   {
-    id: "rwd-showcase",
+    id: "rwd",
     title: "RWD Layout Showcase",
     subtitle: "CSS Layout Practice",
     desc: "整合 Flex、Grid 與 Masonry 的排版練習。",

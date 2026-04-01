@@ -1,5 +1,6 @@
 
 import { FaFolderOpen } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
 import "./Hero.scss";
@@ -37,20 +38,27 @@ function Hero() {
           </div>
 
           <div className="hero__buttons">
-            <button className="ui-btn ui-btn--primary">
-              <FaFolderOpen className="btn__icon" />
-              查看作品
-            </button>
+            <Link to="/portfolio">
+              <button className="ui-btn ui-btn--primary">
+                <FaFolderOpen className="btn__icon" />
+                查看作品
+              </button>
+            </Link>
 
-            <button className="ui-btn ui-btn--outline">
+            <a href="https://github.com/aitong0113" className="ui-btn ui-btn--outline" target="_blank" rel="noopener noreferrer">
               <FaGithub className="btn__icon" />
               GitHub
-            </button>
+            </a>
 
-            <button className="ui-btn ui-btn--outline">
+            <a
+              href={`${import.meta.env.BASE_URL}/resume.pdf`}
+              download
+              className="ui-btn ui-btn--outline"
+            >
               <HiOutlineDocumentArrowDown className="btn__icon" />
               下載履歷
-            </button>
+            </a>
+            
           </div>
 
         </div>

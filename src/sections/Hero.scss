@@ -30,26 +30,41 @@
     align-items: center;
     justify-content: flex-start;
     gap: 80px;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      gap: 36px;
+      padding: 0 16px;
+    }
   }
 
   /* ===== 左圖 ===== */
   &__image {
     flex: 0 0 380px;
-
     display: flex;
     justify-content: center;
-
     img {
       width: 100%;
+      max-width: 320px;
       border-radius: 20px;
-
       box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
-
       transform: translateY(-10px);
-
-      // ✨ 小升級（質感）
       filter: contrast(1.05) brightness(1.05);
+      @media (max-width: 900px) {
+        max-width: 220px;
+        margin-bottom: 12px;
+      }
     }
+      @media (max-width: 900px) {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+      }
+      .hero__main-title {
+        font-size: 2.1rem;
+        @media (max-width: 900px) {
+          font-size: 1.4rem;
+        }
+      }
   }
 
   .hero__image img {

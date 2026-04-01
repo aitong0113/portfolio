@@ -38,25 +38,49 @@
   border-bottom: 1px solid #eee;
 
   .project__hero-product {
+    display: flex;
+    flex-direction: row;
     max-width: 1400px;
     margin: 0 auto;
     padding: 90px 32px 60px 32px; // 上方多 90px，避免被 Navbar 蓋住
     gap: 60px;
     align-items: center;
+    justify-content: center;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      gap: 28px;
+      padding: 40px 8px 24px 8px;
+    }
   }
 
   .hero-left {
     flex: 1.4;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
       width: 100%;
+      max-width: 600px;
       border-radius: 16px;
       box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+      @media (max-width: 900px) {
+        max-width: 90vw;
+        margin: 0 auto 12px auto;
+        display: block;
+      }
+      @media (max-width: 600px) {
+        max-width: 98vw;
+      }
     }
   }
 
   .hero-right {
     flex: 1;
+    @media (max-width: 900px) {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+    }
 
     h1 {
       font-size: 32px;
