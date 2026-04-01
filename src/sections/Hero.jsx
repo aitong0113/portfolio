@@ -11,7 +11,7 @@ function Hero() {
 
         {/* 左圖 */}
         <div className="hero__image">
-          <img src="/images/abbie.jpg" alt="Abbie" />
+          <img src={`${import.meta.env.BASE_URL}/abbie.jpg`} alt="Abbie" />
         </div>
 
         {/* 右內容 */}

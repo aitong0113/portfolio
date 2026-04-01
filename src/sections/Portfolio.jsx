@@ -10,7 +10,7 @@ function Portfolio() {
       subtitle: "Emotion Tracking & Digital Companion",
       desc: "情緒支持型應用，整合音樂播放、情緒紀錄與日記系統，提升使用者自我覺察體驗。",
       tech: ["React", "Redux Toolkit", "React Router", "SCSS"],
-      cover: "/images/InnerSoul.png",
+      cover: "images/InnerSoul.png",
       featured: true,
     }
   ];

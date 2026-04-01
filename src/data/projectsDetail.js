@@ -1,4 +1,10 @@
+const images = import.meta.glob(
+  "/src/assets/images/*.{png,jpg,jpeg}",
+  { eager: true, import: "default" }
+);
+
 import innerSoulMD from "./innersoul.md?raw";
+
 
 const projectsDetail = [
   //////////////////////////////////////////////////
@@ -12,7 +18,7 @@ const projectsDetail = [
     highlight: "完整實作 Redux 狀態流與模組化架構",
 
     tech: ["React", "Redux Toolkit", "Router", "SCSS"],
-    cover: "/images/InnerSoul.png",
+    cover: images["/src/assets/images/InnerSoul.png"],
 
     demo: "https://aitong0113.github.io/InnerSoul/",
     github: "https://github.com/aitong0113/InnerSoul",
@@ -32,7 +38,7 @@ const projectsDetail = [
 
     tech: ["JavaScript", "Firebase", "RWD"],
     cover:
-      "https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1740&auto=format&fit=crop",
+      "https:/images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1740&auto=format&fit=crop",
 
     demo: "https://aitong0113.github.io/CalmAura/",
     github: "https://github.com/aitong0113/CalmAura",
@@ -68,7 +74,7 @@ const projectsDetail = [
 
     tech: ["Vue", "TypeScript", "Firebase"],
     cover:
-      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1740&auto=format&fit=crop",
+      "https:/images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1740&auto=format&fit=crop",
 
     demo: "https://aitong0113.github.io/TS-yogaf/",
     github: "https://github.com/aitong0113/TS-yogaf",
@@ -86,7 +92,7 @@ const projectsDetail = [
 
     tech: ["Vue", "TypeScript", "Firebase"],
     cover:
-      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1740&auto=format&fit=crop",
+      "https:/images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1740&auto=format&fit=crop",
 
     demo: "https://aitong0113.github.io/TS-yogab/",
     github: "https://github.com/aitong0113/TS-yogab",
@@ -103,7 +109,7 @@ const projectsDetail = [
     highlight: "MVC 架構 + SEO 優化",
 
     tech: ["Laravel", "Blade", "MVC"],
-    cover: "/images/4.jpeg",
+    cover: images["/src/assets/images/4.jpeg"],
 
     github: "https://github.com/aitong0113/draworigin/tree/main",
   },
@@ -119,7 +125,7 @@ const projectsDetail = [
     highlight: "Google Sheets 即時同步",
 
     tech: ["JavaScript", "Google Sheets"],
-    cover: "/images/banner.png",
+    cover: images["/src/assets/images/banner.png"],
 
     demo: "https://aitong0113.github.io/VC-task5f/",
     github: "https://github.com/aitong0113/VC-task5f",
@@ -136,7 +142,7 @@ const projectsDetail = [
     highlight: "輸入驗證 + 即時回饋",
 
     tech: ["JavaScript", "DOM"],
-    cover: "/images/1.png",
+    cover: images["/src/assets/images/1.png"],
 
     demo: "https://aitong0113.github.io/VC-Day12/",
     github: "https://github.com/aitong0113/VC-Day12",
@@ -153,7 +159,7 @@ const projectsDetail = [
     highlight: "主題切換 + 動畫互動",
 
     tech: ["JavaScript", "UI/UX"],
-    cover: "/images/2.png",
+    cover: images["/src/assets/images/2.png"],
 
     demo: "https://aitong0113.github.io/VC-Day21/",
     github: "https://github.com/aitong0113/VC-Day21",
@@ -170,7 +176,7 @@ const projectsDetail = [
     highlight: "RWD + 多頁式架構",
 
     tech: ["SCSS", "Bootstrap", "jQuery"],
-    cover: "/images/withyou.jpg",
+    cover: images["/src/assets/images/withyou.jpg"],
 
     demo: "https://aitong0113.github.io/WithYou/",
     github: "https://github.com/aitong0113/WithYou",
@@ -187,7 +193,7 @@ const projectsDetail = [
     highlight: "多版型實戰練習",
 
     tech: ["HTML/CSS", "Flex", "Grid"],
-    cover: "/images/3.jpeg",
+    cover: images["/src/assets/images/3.jpeg"],
 
     demo: "https://aitong0113.github.io/RWD-1/",
   },

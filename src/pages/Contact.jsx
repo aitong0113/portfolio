@@ -114,9 +114,9 @@ const fadeUp = {
 function ResumeModal({ onClose }) {
   // ⭐ 履歷圖片（放 public）
   const resumeImages = [
-    "/images/resume-1.png",
-    "/images/resume-2.png",
-    "/images/resume-3.png",
+  `${import.meta.env.BASE_URL}/resume-1.png`,
+  `${import.meta.env.BASE_URL}/resume-2.png`,
+  `${import.meta.env.BASE_URL}/resume-3.png`,
   ];
 
   return (
@@ -159,7 +159,7 @@ function ResumeModal({ onClose }) {
           </button>
 
           <a
-            href="/images/resume.pdf"
+            href={`${import.meta.env.BASE_URL}/resume.pdf`}
             download
             className="modal-btn modal-btn-dl"
           >
@@ -287,7 +287,7 @@ function Contact() {
             </div>
 
             <div className="resume-actions">
-              {/* 修正：按鈕改用 react-icons，inline-flex + gap 在 SCSS 已設定 */}
+
               <button
                 className="btn primary"
                 onClick={() => setModalOpen(true)}
@@ -297,7 +297,7 @@ function Contact() {
                 預覽履歷
               </button>
               <a
-                href="/images/resume.pdf"
+                href={`${import.meta.env.BASE_URL}/resume.pdf`}
                 download
                 className="btn ghost"
               >

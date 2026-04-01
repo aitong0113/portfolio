@@ -1,3 +1,8 @@
+const images = import.meta.glob(
+  "/src/assets/images/*.{png,jpg,jpeg}",
+  { eager: true, import: "default" }
+);
+
 const projectList = [
   // ⭐ 主打
   {
@@ -6,7 +11,7 @@ const projectList = [
     category: "frontend",
     tech: ["react", "redux", "router", "scss"],
 
-    cover: "/images/InnerSoul.png",
+    cover: images["/src/assets/images/InnerSoul.png"],
 
     desc: "情緒支持型應用，整合音樂播放、情緒紀錄與日記系統",
     highlight: "State × Data Flow × Component Architecture",
@@ -32,7 +37,7 @@ const projectList = [
     category: "frontend",
     tech: ["js", "firebase"],
 
-    cover: "https://images.unsplash.com/photo-1603006905003-be475563bc59",
+    cover: "https:/images.unsplash.com/photo-1603006905003-be475563bc59",
 
     desc: "電商前台，重視購物體驗與資料同步",
 
@@ -62,7 +67,7 @@ const projectList = [
     category: "frontend",
     tech: ["vue", "ts", "firebase"],
 
-    cover: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b",
+    cover: "https:/images.unsplash.com/photo-1544367567-0f2fcb009e0b",
 
     desc: "Vue + TS 電商前台，分類與結帳流程優化",
 
@@ -77,7 +82,7 @@ const projectList = [
     category: "frontend",
     tech: ["vue", "ts", "firebase"],
 
-    cover: "https://images.unsplash.com/photo-1506126613408-eca07ce68773",
+    cover: "https:/images.unsplash.com/photo-1506126613408-eca07ce68773",
 
     desc: "商品、訂單、優惠券管理系統",
 
@@ -92,7 +97,7 @@ const projectList = [
     category: "design",
     tech: ["laravel", "blade"],
 
-    cover: "/images/4.jpeg",
+    cover: images["/src/assets/images/4.jpeg"],
 
     desc: "插畫教學品牌網站（SEO + 多頁架構）",
 
@@ -106,7 +111,7 @@ const projectList = [
     category: "tool",
     tech: ["js"],
 
-    cover: "/images/banner.png",
+    cover: images["/src/assets/images/banner.png"],
 
     desc: "收支管理 + Google Sheets 同步",
 
@@ -121,7 +126,7 @@ const projectList = [
     category: "tool",
     tech: ["js"],
 
-    cover: "/images/1.png",
+    cover: images["/src/assets/images/1.png"],
 
     desc: "JS 即時互動小工具",
 
@@ -136,7 +141,7 @@ const projectList = [
     category: "design",
     tech: ["js"],
 
-    cover: "/images/2.png",
+    cover: images["/src/assets/images/2.png"],
 
     desc: "心理 × UI 互動情緒 App",
 
@@ -151,7 +156,7 @@ const projectList = [
     category: "design",
     tech: ["scss", "bootstrap", "jquery"],
 
-    cover: "/images/withyou.jpg",
+    cover: images["/src/assets/images/withyou.jpg"],
 
     desc: "親子互動平台（RWD + 插畫風）",
 
@@ -166,7 +171,7 @@ const projectList = [
     category: "frontend",
     tech: ["css"],
 
-    cover: "/images/3.jpeg",
+    cover: images["/src/assets/images/3.jpeg"],
 
     desc: "Flex / Grid / Masonry 練習",
 
