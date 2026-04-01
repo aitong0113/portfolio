@@ -526,10 +526,11 @@
   
 }
 
+
 .modal-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center; 
   padding: 1.1rem 1.5rem;
   border-bottom: 1px solid rgba(196, 138, 106, 0.18);
   background: #fff;
@@ -548,8 +549,8 @@
 }
 
 .modal-close {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: 1px solid rgba(196, 138, 106, 0.25);
   background: transparent;
@@ -559,8 +560,15 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  font-size: 0.85rem;
+  font-size: 1.2rem;
+  margin-right: 16px;
+  margin-top: 0;
   transition: all 0.2s;
+
+  svg {
+    display: block;
+    margin: 0 auto;
+  }
 
   &:hover {
     background: #2e211b;
