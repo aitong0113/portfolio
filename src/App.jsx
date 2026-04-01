@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
   useLocation,
@@ -57,10 +58,11 @@ function AnimatedRoutes() {
   );
 }
 
+
 // 🔥 主 App
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
 
       <Navbar />
@@ -71,7 +73,7 @@ function App() {
       <Footer />
 
       <ScrollToTopBtn />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
