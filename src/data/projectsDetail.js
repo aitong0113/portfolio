@@ -71,7 +71,7 @@ const projectsDetail = [
     highlight: "Vue3 Composition API + TypeScript 實戰",
 
     tech: ["Vue", "TypeScript", "Firebase"],
-    cover: images["/src/assets/images/Yoga.jpeg"],
+    cover: images["/src/assets/images/yoga.jpeg"],
 
     demo: "https://aitong0113.github.io/TS-yogaf/",
     github: "https://github.com/aitong0113/TS-yogaf",
@@ -88,7 +88,7 @@ const projectsDetail = [
     highlight: "完整後台資料管理與圖片上傳",
 
     tech: ["Vue", "TypeScript", "Firebase"],
-    cover: images["/src/assets/images/Yoga2.jpeg"],
+    cover: images["/src/assets/images/yoga2.jpeg"],
     demo: "https://aitong0113.github.io/TS-yogab/",
     github: "https://github.com/aitong0113/TS-yogab",
   },

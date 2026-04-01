@@ -67,7 +67,7 @@ const projectList = [
     category: "frontend",
     tech: ["vue", "ts", "firebase"],
 
-    cover: images["/src/assets/images/Yoga.jpeg"],
+    cover: images["/src/assets/images/yoga.jpeg"],
 
     desc: "Vue + TS 電商前台，分類與結帳流程優化",
 
@@ -82,7 +82,7 @@ const projectList = [
     category: "frontend",
     tech: ["vue", "ts", "firebase"],
 
-    cover: images["/src/assets/images/Yoga2.jpeg"],
+    cover: images["/src/assets/images/yoga2.jpeg"],
 
     desc: "商品、訂單、優惠券管理系統",
 
