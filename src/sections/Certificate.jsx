@@ -2,43 +2,43 @@ import "./Certificate.scss";
 
 const certificates = [
   {
-    img: "images/c1.jpg",
+    img: `${import.meta.env.BASE_URL}/c1.jpg`,
     title: "全端工程師青年專班",
     desc: "勞動力發展署中彰投分署結訓證書，460 小時網站前後端工程師養成訓練",
     tags: ["HTML/CSS", "JavaScript", "Vue", "PHP", "Laravel", "MySQL"],
   },
   {
-    img: "images/hex-RWD.png",
+    img: `${import.meta.env.BASE_URL}/hex-RWD.png`,
     title: "Responsive Web Design (RWD)",
     desc: "學習 RWD 核心概念與實作方法，能因應不同裝置設計一致體驗。",
     tags: ["RWD", "HTML", "CSS", "SCSS", "Frontend"],
   },
   {
-    img: "images/Google UX Design-1.png",
+    img: `${import.meta.env.BASE_URL}/Google UX Design-1.png`,
     title: "Foundations of UX Design",
     desc: "學習 UX 基礎理論與設計流程。",
     tags: ["UX", "Design Thinking", "User-Centered"],
   },
   {
-    img: "images/hex-BS.png",
+    img: `${import.meta.env.BASE_URL}/hex-BS.png`,
     title: "Bootstrap 5",
     desc: "熟悉格線系統與快速建立前端版型。",
     tags: ["Bootstrap", "SCSS", "RWD"],
   },
   {
-    img: "images/hex-TS.png",
+    img: `${import.meta.env.BASE_URL}/hex-TS.png`,
     title: "TypeScript Training",
     desc: "深入理解型別系統與工程思維。",
     tags: ["TypeScript", "Frontend", "Engineering"],
   },
   {
-    img: "images/hex-git.png",
+    img: `${import.meta.env.BASE_URL}/hex-git.png`,
     title: "Git & GitHub",
     desc: "掌握版本控制與團隊協作流程。",
     tags: ["Git", "GitHub", "Collaboration"],
   },
   {
-    img: "images/hex-JS.png",
+    img: `${import.meta.env.BASE_URL}/hex-JS.png`,
     title: "JavaScript Training",
     desc: "具備基礎工程思維與實作能力。",
     tags: ["JavaScript", "Frontend", "Problem Solving"],
