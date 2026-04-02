@@ -28,7 +28,7 @@ function Portfolio() {
       <div className="portfolio__grid--single">
 
 <Link
-  to={`/project/${featuredProject.id}`}
+  to={`/#/project/${featuredProject.id}`}
   className="project-card featured"
 >
 
@@ -67,7 +67,7 @@ function Portfolio() {
       </div>
 
       <div className="portfolio__more">
-        <Link to="/portfolio" className="ui-btn ui-btn--primary">查看其他專案 ↓</Link>
+        <Link to="/#/portfolio" className="ui-btn ui-btn--primary">查看其他專案 ↓</Link>
       </div>
 
     </section>
