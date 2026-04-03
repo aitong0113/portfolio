@@ -38,7 +38,7 @@ function Hero() {
           </div>
 
           <div className="hero__buttons">
-            <Link to="/#/portfolio">
+            <Link to="/portfolio">
               <button className="ui-btn ui-btn--primary">
                 <FaFolderOpen className="btn__icon" />
                 查看作品

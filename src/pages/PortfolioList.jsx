@@ -109,7 +109,7 @@ function Portfolio() {
 
         {/* ⭐ 主打卡 */}
         {featured && (
-          <Link to={`/#/project/${featured.id}`} className="card-link">
+          <Link to={`/project/${featured.id}`} className="card-link">
             <ProjectCardVertical project={featured} featured />
           </Link>
         )}
@@ -117,7 +117,7 @@ function Portfolio() {
         {/* ⭐ 其他卡片 */}
         <div className="project-grid">
           {others.map((p) => (
-            <Link key={p.id} to={`/#/project/${p.id}`} className="card-link">
+            <Link key={p.id} to={`/project/${p.id}`} className="card-link">
               <ProjectCardVertical project={p} />
             </Link>
           ))}
