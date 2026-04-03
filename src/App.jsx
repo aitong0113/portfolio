@@ -63,15 +63,12 @@ function AnimatedRoutes() {
 function App() {
   return (
     <HashRouter>
+      <Navbar />
       <ScrollToTop />
 
-      <Navbar />
-
       {/* ⭐ 核心：動畫包在這 */}
-      <AnimatedRoutes />
-
-      <Footer />
-
+        <AnimatedRoutes />
+        <Footer />
       <ScrollToTopBtn />
     </HashRouter>
   );

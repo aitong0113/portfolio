@@ -13,11 +13,11 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link to="/#/" className="logo" style={{ textDecoration: 'none', color: 'inherit' }}>Abbie Lin</Link>
+      <Link to="/" className="logo" style={{ textDecoration: 'none', color: 'inherit' }}>Abbie Lin</Link>
       <div className={`nav-links${menuOpen ? " open" : ""}`}>
-        <Link to="/#/" className={location.pathname === "/" ? "active" : ""} onClick={handleLinkClick}>關於</Link>
-        <Link to="/#/portfolio" className={location.pathname.startsWith("/portfolio") ? "active" : ""} onClick={handleLinkClick}>作品</Link>
-        <Link to="/#/contact" className={location.pathname === "/contact" ? "active" : ""} onClick={handleLinkClick}>聯絡</Link>
+        <Link to="/" className={location.pathname === "/" ? "active" : ""} onClick={handleLinkClick}>關於</Link>
+        <Link to="/portfolio" className={location.pathname.startsWith("/portfolio") ? "active" : ""} onClick={handleLinkClick}>作品</Link>
+        <Link to="/contact" className={location.pathname === "/contact" ? "active" : ""} onClick={handleLinkClick}>聯絡</Link>
       </div>
       <div className={`hamburger${menuOpen ? " open" : ""}`} onClick={() => setMenuOpen((prev) => !prev)}>
         <span />
