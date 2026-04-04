@@ -117,6 +117,9 @@ function ResumeModal({ onClose }) {
     `${import.meta.env.BASE_URL}/resume-1.png`,
     `${import.meta.env.BASE_URL}/resume-2.png`,
     `${import.meta.env.BASE_URL}/resume-3.png`,
+    `${import.meta.env.BASE_URL}/resume-4.png`,
+    `${import.meta.env.BASE_URL}/resume-5.png`,
+    `${import.meta.env.BASE_URL}/resume-6.png`,
   ];
 
   return (
