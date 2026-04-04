@@ -18,21 +18,21 @@ const CONTACT_LINKS = [
     icon: <FaEnvelope />,
     label: "Email",
     sub: "aitong0113@gmail.com",
-    desc: "直接聯絡我（通常 24 小時內回覆）",
+    desc: "合作洽詢（24 小時內回覆）",
     href: "mailto:aitong0113@gmail.com",
   },
   {
     icon: <FaLine />,
     label: "LINE",
     sub: "點此加入好友",
-    desc: "快速聯繫 / 即時討論",
+    desc: "快速溝通需求 / 專案討論",
     href: "https://line.me/ti/p/iui71zPXUK",
   },
   {
     icon: <FaGithub />,
     label: "GitHub",
-    sub: "github.com/abbie-lin",
-    desc: "查看我的專案與程式碼",
+    sub: "github.com/aitong0113",
+    desc: "查看專案架構與程式實作",
     href: "https://github.com/aitong0113",
     target: "_blank",
   },
@@ -40,7 +40,7 @@ const CONTACT_LINKS = [
     icon: <FaBehance />,
     label: "Behance",
     sub: "設計作品集",
-    desc: "查看我的設計作品與專案",
+    desc: "查看 UI / 設計作品",
     href: "https://www.behance.net/abbie_draw",
     target: "_blank",
   },
@@ -48,7 +48,7 @@ const CONTACT_LINKS = [
     icon: <FaInstagram />,
     label: "Instagram",
     sub: "@abbie_draw",
-    desc: "插畫作品與日常分享",
+    desc: "插畫創作與日常分享",
     href: "https://instagram.com/abbie_draw",
     target: "_blank",
   },
@@ -114,9 +114,9 @@ const fadeUp = {
 function ResumeModal({ onClose }) {
   // ⭐ 履歷圖片（放 public）
   const resumeImages = [
-  `${import.meta.env.BASE_URL}/resume-1.png`,
-  `${import.meta.env.BASE_URL}/resume-2.png`,
-  `${import.meta.env.BASE_URL}/resume-3.png`,
+    `${import.meta.env.BASE_URL}/resume-1.png`,
+    `${import.meta.env.BASE_URL}/resume-2.png`,
+    `${import.meta.env.BASE_URL}/resume-3.png`,
   ];
 
   return (
@@ -131,7 +131,7 @@ function ResumeModal({ onClose }) {
           <div>
             <h4>Abbie Lin — 履歷預覽</h4>
             <p className="modal-header-meta">
-              最後更新 2025.03 · 繁體中文版
+              最後更新 2026.04 · 繁體中文版
             </p>
           </div>
 
@@ -211,27 +211,38 @@ function Contact() {
         <div className="container">
 
           {/* ══ 左側 ══ */}
-          <div
-            className="contact-left"
-          >
-            <p className="label" variants={fadeUp} custom={0}>
+          <div className="contact-left">
+            <p className="label">
               Contact
             </p>
 
-            <h1 variants={fadeUp} custom={1}>
-              一起做<span>有價值</span>的產品
+            <h1>
+              把設計，轉成<span>真正可用的產品</span>
             </h1>
 
-            <p className="subtitle" variants={fadeUp} custom={2}>
-              我是一名前端工程師，專注於 React 與使用者體驗設計，
-              擅長從介面設計到功能實作，打造兼具美感與效能的網站與應用。
+            <p className="subtitle">
+              Frontend Engineer · React · Data Flow
             </p>
 
-            <h2 variants={fadeUp} custom={3}>期待與你合作</h2>
+            <p className="desc">
+              我專注於 React 與資料流架構，
+              將 UI 與需求轉化為穩定且可維護的前端產品，
+              並優化使用者操作流程與整體體驗。
+            </p>
 
-            <p className="desc" variants={fadeUp} custom={4}>
-              目前正在尋找前端開發相關機會（正職／接案），
-              若你正在尋找能兼顧設計與工程的開發者，歡迎與我聯繫。
+            <p className="highlight-list">
+              ✔ React / Redux 實戰專案<br />
+              ✔ 電商 / 後台系統開發經驗<br />
+              ✔ 從設計到上線的整合能力<br />
+              ✔ 心理 × 使用者體驗 × 前端開發
+            </p>
+
+            <h2>目前開放前端合作</h2>
+
+            <p className="desc">
+              目前開放正職與接案合作，
+              如果你正在找能把設計變成產品的工程師，
+              現在就可以直接聯繫我。
             </p>
 
             {/* 聯絡卡片列表 */}
@@ -281,7 +292,12 @@ function Contact() {
             </p>
 
             <div className="resume-tags">
-              {["Frontend Dev", "UI/UX Design", "Illustration", "Psychology"].map((t) => (
+              {[
+                "Frontend Engineering",
+                "React & State Management",
+                "UI → Product Implementation",
+                "UX & Interaction Thinking",
+              ].map((t) => (
                 <span key={t}>{t}</span>
               ))}
             </div>
@@ -310,7 +326,7 @@ function Contact() {
             <div className="resume-divider" />
 
             <div className="resume-footer">
-              <span className="resume-update">最後更新：2025 年 3 月</span>
+              <span className="resume-update">最後更新：2026 年 4 月</span>
 
             </div>
           </div>

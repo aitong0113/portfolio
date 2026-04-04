@@ -12,28 +12,27 @@ function Hero() {
 
         {/* 左圖 */}
         <div className="hero__image">
-          <img src={`${import.meta.env.BASE_URL}/abbie.jpg`} alt="Abbie" />
+          <img src={`${import.meta.env.BASE_URL}/abbie.png`} alt="Abbie" />
         </div>
 
         {/* 右內容 */}
         <div className="hero__content">
 
           <div className="hero__role">
-            FRONTEND ENGINEER · UI/UX DESIGNER
+           Frontend Engineer <br /> React · Redux Toolkit · RESTful API · SCSS · Git
           </div>
 
           <h1 className="hero__main-title">
-            我把設計落實為<br />
-            真正可用的
-            <span className="hero__main-title--em">前端</span>體驗
+            專注於<br />
+            <span className="hero__main-title--em">React 應用開發</span>打造可維護的前端架構
           </h1>
 
           <div className="hero__desc">
             <div className="hero__desc--sub">
-              將設計轉化為可運作的產品
+              實作 Redux Toolkit 狀態管理與 API 資料流設計
             </div>
             <div className="hero__desc--small">
-              結合設計、工程與心理的前端開發者
+              能獨立完成前端開發到部署流程
             </div>
           </div>
 

@@ -6,7 +6,7 @@
 
 .portfolio {
   padding: 140px 0;
-  max-width: 1300px;
+  max-width: 1500px;
   margin: 0 auto;
 
   &__header {
@@ -81,9 +81,11 @@
   grid-template-columns: 1.2fr 1fr;
   align-items: center;
 
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
+  width: 90vw;
+
+  margin-left: calc(50% - 45vw);
+  margin-right: calc(50% - 45vw);
+
 
   border-radius: 28px;
   overflow: hidden;
@@ -150,11 +152,9 @@
 
   &__content {
     position: relative;
-    padding: 48px;
+    padding: 60px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    max-width: 520px;
   }
 
   ////////////////////////////////////////////////////////
@@ -194,12 +194,35 @@
     line-height: 1.7;
   }
 
-  .highlight {
-    font-size: 14px;
-    color: $color-primary;
-    letter-spacing: 0.5px;
-  }
+.highlight {
+  font-size: 13px;
+  color: $color-secondary-dark;
 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  align-self: center; // ⭐ 可選
+}
+
+.mini-tech {
+  font-size: 13px;
+  color: #333; // ❗加深
+  font-weight: 500; // ❗加一點重量
+  background: #f4f4f4;
+
+  border-left: 3px solid $color-primary; // 🔥加這條
+  padding: 10px 14px;
+}
+
+.mini-desc {
+  font-size: 13px;
+  color: #777;
+}
   ////////////////////////////////////////////////////////
   // Tags
   ////////////////////////////////////////////////////////

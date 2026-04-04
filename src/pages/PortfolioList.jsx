@@ -5,12 +5,13 @@ import ProjectCardVertical from "../components/cards/ProjectCardVertical";
 import projectList from "../data/projectList";
 
 function Portfolio() {
-
-  // 🔥 狀態
   const [category, setCategory] = useState("all");
   const [tech, setTech] = useState("all");
 
-  // 🔥 自動分類（來自資料）
+  ////////////////////////////////////////////////////////
+  // 🔥 分類資料
+  ////////////////////////////////////////////////////////
+
   const categories = useMemo(() => {
     return ["all", ...new Set(projectList.map((p) => p.category))];
   }, []);
@@ -19,7 +20,10 @@ function Portfolio() {
     return ["all", ...new Set(projectList.flatMap((p) => p.tech))];
   }, []);
 
-  // 🔥 篩選
+  ////////////////////////////////////////////////////////
+  // 🔥 篩選邏輯
+  ////////////////////////////////////////////////////////
+
   const filtered = useMemo(() => {
     return projectList.filter((p) => {
       return (
@@ -29,28 +33,54 @@ function Portfolio() {
     });
   }, [category, tech]);
 
-  // 🔥 主打（真正分離）
-  const featured = filtered.find((p) => p.featured);
+  ////////////////////////////////////////////////////////
+  // 🔥 主打（永遠存在，不受 filter 影響）
+  ////////////////////////////////////////////////////////
+
+  const featured = projectList.find((p) => p.featured);
+
+  ////////////////////////////////////////////////////////
+  // 🔥 其他卡片（才用 filtered）
+  ////////////////////////////////////////////////////////
+
   const others = filtered.filter((p) => !p.featured);
 
-  // 🔥 中文 mapping（面試加分）
+  ////////////////////////////////////////////////////////
+  // 🔥 顯示名稱
+  ////////////////////////////////////////////////////////
+
   const categoryMap = {
-    all: "全部",
-    frontend: "前端",
-    design: "設計",
-    tool: "工具",
+    all: "全部作品",
+    core: "核心專案",
+    product: "產品開發",
+    system: "系統 / 後台",
+    experiment: "練習 / 工具",
   };
 
   const techMap = {
-    all: "全部",
+    all: "全部技術",
+
     react: "React",
-    vue: "Vue",
+    redux: "Redux",
+    router: "Router",
+
     js: "JavaScript",
     ts: "TypeScript",
+
     scss: "SCSS",
+    css: "CSS",
+
     firebase: "Firebase",
     laravel: "Laravel",
+    blade: "Blade",
+
+    bootstrap: "Bootstrap",
+    jquery: "jQuery",
   };
+
+  ////////////////////////////////////////////////////////
+  // 🔥 UI
+  ////////////////////////////////////////////////////////
 
   return (
     <section className="portfolio-page">
@@ -59,11 +89,13 @@ function Portfolio() {
         {/* HERO */}
         <div className="portfolio-hero">
           <p className="label">PORTFOLIO</p>
+
           <h1>
-            把想法變成<span>真正可用</span>的產品
+            將需求轉化為<span>真正可用</span>的產品
           </h1>
+
           <p className="subtitle">
-            Frontend・UI/UX・Illustration — 從設計到實作
+            Frontend Engineer · React · State Management · Data Flow Architecture
           </p>
         </div>
 
@@ -79,7 +111,10 @@ function Portfolio() {
                 <button
                   key={c}
                   className={category === c ? "active" : ""}
-                  onClick={() => setCategory(c)}
+                  onClick={() => {
+                    setCategory(c);
+                    setTech("all"); // 🔥 避免 filter 卡死
+                  }}
                 >
                   {categoryMap[c] || c}
                 </button>
@@ -107,20 +142,24 @@ function Portfolio() {
           </div>
         </div>
 
-        {/* ⭐ 主打卡 */}
+        {/* ⭐ 主打卡（永遠顯示） */}
         {featured && (
-          <Link to={`/project/${featured.id}`} className="card-link">
+          <Link to={`/project/${featured.id}`} className="card-link featured-card">
             <ProjectCardVertical project={featured} featured />
           </Link>
         )}
 
         {/* ⭐ 其他卡片 */}
         <div className="project-grid">
-          {others.map((p) => (
-            <Link key={p.id} to={`/project/${p.id}`} className="card-link">
-              <ProjectCardVertical project={p} />
-            </Link>
-          ))}
+          {others.length > 0 ? (
+            others.map((p) => (
+              <Link key={p.id} to={`/project/${p.id}`} className="card-link">
+                <ProjectCardVertical project={p} />
+              </Link>
+            ))
+          ) : (
+            <p className="empty">目前沒有符合條件的作品</p>
+          )}
         </div>
 
       </div>

@@ -7,9 +7,19 @@ function Portfolio() {
     {
       id: "innersoul",
       title: "InnerSoul 心途",
-      subtitle: "Emotion Tracking & Digital Companion",
-      desc: "情緒支持型應用，整合音樂播放、情緒紀錄與日記系統，提升使用者自我覺察體驗。",
+
+      subtitle: "State Management & Data Flow Architecture in React",
+
+      desc: "以 React 建構情緒追蹤應用，透過 Redux Toolkit 管理全域狀態，解決跨頁與跨元件資料同步問題，建立可預測的資料流架構。",
+
+      // ⭐ 新增這兩個
+      miniTech: "Redux Flow: action → store → thunk → API → state → UI",
+      miniDesc: "將非同步資料流集中管理，避免跨元件狀態錯亂問題",
+
+      highlight: "Global State × Async Flow × Component Architecture",
+
       tech: ["React", "Redux Toolkit", "React Router", "SCSS"],
+
       cover: `${import.meta.env.BASE_URL}/InnerSoul.png`,
       featured: true,
     }
@@ -27,47 +37,56 @@ function Portfolio() {
 
       <div className="portfolio__grid--single">
 
-<Link
-  to={`/#/project/${featuredProject.id}`}
-  className="project-card featured"
->
+        <Link
+          to={`/project/${featuredProject.id}`}
+          className="project-card featured"
+        >
 
-  {/* ⭐ 圖片區 */}
-  <div className="project-card__image">
-    <img src={featuredProject.cover} alt={featuredProject.title} />
+          {/* ⭐ 圖片區 */}
+          <div className="project-card__image">
+            <img src={featuredProject.cover} alt={featuredProject.title} />
 
-    {/* ⭐ overlay 要放這裡 */}
-    <div className="overlay">
-      <span>查看專案 →</span>
-    </div>
-  </div>
+            <div className="overlay">
+              <span>查看專案 →</span>
+            </div>
+          </div>
 
-  {/* ⭐ 內容區 */}
-  <div className="project-card__content">
-    <span className="badge">Featured</span>
+          {/* ⭐ 內容區 */}
+          <div className="project-card__content">
+            <span className="badge">Featured</span>
 
-    <h3>{featuredProject.title}</h3>
-    <p className="subtitle">{featuredProject.subtitle}</p>
+            <h3>{featuredProject.title}</h3>
+            <p className="subtitle">{featuredProject.subtitle}</p>
 
-    <p className="desc">{featuredProject.desc}</p>
 
-    <p className="highlight">
-      State × Data Flow × Component Architecture
-    </p>
+            <p className="mini-tech">
+              {featuredProject.miniTech}
+            </p>
+            <p className="mini-desc">
+              {featuredProject.miniDesc}
+            </p>
 
-    <div className="tags">
-      {featuredProject.tech.map((t, i) => (
-        <span key={i}>{t}</span>
-      ))}
-    </div>
-  </div>
+            <p className="desc">{featuredProject.desc}</p>
 
-</Link>
+            <p className="highlight">
+              {featuredProject.highlight}
+            </p>
+
+            <div className="tags">
+              {featuredProject.tech.map((t, i) => (
+                <span key={i}>{t}</span>
+              ))}
+            </div>
+          </div>
+
+        </Link>
 
       </div>
 
       <div className="portfolio__more">
-        <Link to="/#/portfolio" className="ui-btn ui-btn--primary">查看其他專案 ↓</Link>
+        <Link to="/portfolio" className="ui-btn ui-btn--primary">
+          查看其他專案 ↓
+        </Link>
       </div>
 
     </section>

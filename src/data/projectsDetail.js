@@ -8,21 +8,25 @@ import innerSoulMD from "./innersoul.md?raw";
 
 const projectsDetail = [
   //////////////////////////////////////////////////
-  // InnerSoul
+  // ⭐ InnerSoul
   //////////////////////////////////////////////////
   {
     id: "innersoul",
     title: "InnerSoul 心途",
-    subtitle: "Emotion Tracking × Digital Companion",
-    desc: "以情緒覺察為核心，整合日記與音樂陪伴，打造可持續的自我對話體驗。",
-    highlight: "完整實作 Redux 狀態流與模組化架構",
+    subtitle: "React State Management Architecture",
 
-    tech: ["React", "Redux Toolkit", "Router", "SCSS"],
-    cover: images["/src/assets/images/InnerSoul.png"],
+    miniTech: "Redux Flow：action → store → thunk → API → state → UI",
+    miniDesc: "集中管理非同步資料流，確保跨頁與跨元件狀態一致性",
+
+    desc: "以 React 建構情緒紀錄應用，整合音樂播放與日記 CRUD，建立可預測的資料流架構。",
+    highlight: "Global State × Async Flow × Component Architecture",
+
+    tech: ["React", "Redux Toolkit", "React Router", "SCSS"],
+    cover: `${import.meta.env.BASE_URL}/InnerSoul.png`,
+    featured: true,
 
     demo: "https://aitong0113.github.io/InnerSoul/",
     github: "https://github.com/aitong0113/InnerSoul",
-
     richDescription: innerSoulMD,
   },
 
@@ -31,10 +35,14 @@ const projectsDetail = [
   //////////////////////////////////////////////////
   {
     id: "calmaura-frontend",
-    title: "CalmAura｜香氛蠟燭電商前台",
-    subtitle: "E-commerce Frontend Experience",
-    desc: "專注使用者購物流程，優化購物車、訂單與資料同步體驗。",
-    highlight: "完整電商流程實作（購物 → 結帳 → 訂單）",
+    title: "CalmAura｜電商前台",
+    subtitle: "E-commerce Frontend",
+
+    miniTech: "User Flow：product → cart → checkout → order",
+    miniDesc: "串接 Firebase 即時資料，確保購物流程資料同步",
+
+    desc: "實作商品瀏覽、購物車與結帳流程，優化使用者購物體驗。",
+    highlight: "E-commerce Flow × Firebase Sync",
 
     tech: ["JavaScript", "Firebase", "RWD"],
     cover: images["/src/assets/images/CalmAura.jpeg"],
@@ -48,10 +56,14 @@ const projectsDetail = [
   //////////////////////////////////////////////////
   {
     id: "calmaura-admin",
-    title: "CalmAura｜電商後台管理系統",
+    title: "CalmAura｜後台管理系統",
     subtitle: "Admin Dashboard System",
-    desc: "提供訂單管理、營收圖表與權限控管的後台系統。",
-    highlight: "後台 CRUD + 圖表分析 + 權限設計",
+
+    miniTech: "CRUD Flow：create → read → update → delete",
+    miniDesc: "建立商品、訂單與權限管理流程，提升資料一致性",
+
+    desc: "提供訂單管理、營收圖表與權限控管功能。",
+    highlight: "Dashboard × Data Control × Chart",
 
     tech: ["JavaScript", "Firebase", "Chart"],
     cover: images["/src/assets/images/CalmAura2.jpeg"],
@@ -65,10 +77,14 @@ const projectsDetail = [
   //////////////////////////////////////////////////
   {
     id: "yoga-frontend",
-    title: "靜心陰瑜伽｜電商前台",
-    subtitle: "Vue 3 × TypeScript E-commerce",
-    desc: "以 Vue3 + TS 打造完整購物流程，強化使用者體驗。",
-    highlight: "Vue3 Composition API + TypeScript 實戰",
+    title: "靜心陰瑜伽｜前台",
+    subtitle: "Vue 3 × TypeScript",
+
+    miniTech: "Typed Flow：API → typed state → UI",
+    miniDesc: "透過 TypeScript 強化資料結構與開發安全性",
+
+    desc: "實作商品分類、購物流程與型別安全開發。",
+    highlight: "Vue Composition API × Type Safety",
 
     tech: ["Vue", "TypeScript", "Firebase"],
     cover: images["/src/assets/images/yoga.jpeg"],
@@ -82,44 +98,57 @@ const projectsDetail = [
   //////////////////////////////////////////////////
   {
     id: "yoga-admin",
-    title: "靜心陰瑜伽｜後台管理系統",
-    subtitle: "Admin System with Vue3",
-    desc: "支援商品、訂單與優惠券管理的後台系統。",
-    highlight: "完整後台資料管理與圖片上傳",
+    title: "靜心陰瑜伽｜後台",
+    subtitle: "Vue Admin System",
+
+    miniTech: "Admin Flow：data control → validation → update",
+    miniDesc: "建立資料管理與驗證流程，提升系統穩定性",
+
+    desc: "支援商品、訂單與優惠券管理。",
+    highlight: "Admin CRUD × Data Consistency",
 
     tech: ["Vue", "TypeScript", "Firebase"],
     cover: images["/src/assets/images/yoga2.jpeg"],
+
     demo: "https://aitong0113.github.io/TS-yogab/",
     github: "https://github.com/aitong0113/TS-yogab",
   },
 
   //////////////////////////////////////////////////
-  // DrawOrigin
+  // Laravel
   //////////////////////////////////////////////////
   {
     id: "draworigin",
-    title: "繪初 DrawOrigin｜品牌網站",
-    subtitle: "Laravel Multi-page Website",
-    desc: "以 Laravel 打造插畫品牌網站，強化 SEO 與內容管理。",
-    highlight: "MVC 架構 + SEO 優化",
+    title: "繪初 DrawOrigin",
+    subtitle: "Laravel MVC Website",
 
-    tech: ["Laravel", "Blade", "MVC"],
+    miniTech: "MVC：route → controller → view",
+    miniDesc: "透過 MVC 分層提升程式結構與可維護性",
+
+    desc: "建立插畫品牌網站與內容架構。",
+    highlight: "Laravel × SEO Structure",
+
+    tech: ["Laravel", "Blade"],
     cover: images["/src/assets/images/4.jpeg"],
 
     github: "https://github.com/aitong0113/draworigin/tree/main",
   },
 
   //////////////////////////////////////////////////
-  // 記帳 App
+  // 記帳
   //////////////////////////////////////////////////
   {
     id: "accounting",
-    title: "日常記帳｜收支管理 App",
-    subtitle: "Personal Finance Tracker",
-    desc: "支援分類、預算與統計的個人記帳工具。",
-    highlight: "Google Sheets 即時同步",
+    title: "日常記帳工具",
+    subtitle: "Finance Tracker",
 
-    tech: ["JavaScript", "Google Sheets"],
+    miniTech: "API Sync：input → request → Google Sheets",
+    miniDesc: "將使用者資料同步至雲端表單",
+
+    desc: "支援收支分類與資料同步。",
+    highlight: "API Integration × Data Sync",
+
+    tech: ["JavaScript"],
     cover: images["/src/assets/images/banner.png"],
 
     demo: "https://aitong0113.github.io/VC-task5f/",
@@ -131,12 +160,16 @@ const projectsDetail = [
   //////////////////////////////////////////////////
   {
     id: "dogage",
-    title: "DogAge｜互動小工具",
-    subtitle: "JavaScript Interaction Practice",
-    desc: "練習即時輸入與 DOM 操作的互動工具。",
-    highlight: "輸入驗證 + 即時回饋",
+    title: "DogAge",
+    subtitle: "JS Interaction Tool",
 
-    tech: ["JavaScript", "DOM"],
+    miniTech: "Interaction：input → calculate → UI update",
+    miniDesc: "透過 DOM 操作實現即時互動回饋",
+
+    desc: "練習事件處理與輸入驗證。",
+    highlight: "DOM × Event Handling",
+
+    tech: ["JavaScript"],
     cover: images["/src/assets/images/1.png"],
 
     demo: "https://aitong0113.github.io/VC-Day12/",
@@ -144,16 +177,20 @@ const projectsDetail = [
   },
 
   //////////////////////////////////////////////////
-  // Mood Weather
+  // 心天氣
   //////////////////////////////////////////////////
   {
     id: "mood-weather",
     title: "今日心天氣",
-    subtitle: "Emotion UI Interaction",
-    desc: "結合心理學與 UI 設計的情緒探索 App。",
-    highlight: "主題切換 + 動畫互動",
+    subtitle: "Emotion Interaction App",
 
-    tech: ["JavaScript", "UI/UX"],
+    miniTech: "UX Flow：emotion → UI feedback",
+    miniDesc: "透過互動設計引導情緒覺察",
+
+    desc: "結合心理模型的情緒 UI 應用。",
+    highlight: "UX × Interaction",
+
+    tech: ["JavaScript"],
     cover: images["/src/assets/images/2.png"],
 
     demo: "https://aitong0113.github.io/VC-Day21/",
@@ -165,10 +202,14 @@ const projectsDetail = [
   //////////////////////////////////////////////////
   {
     id: "withyou",
-    title: "WithYou｜親子陪伴平台",
-    subtitle: "Illustration × Interaction",
-    desc: "以插畫與互動設計打造親子陪伴平台。",
-    highlight: "RWD + 多頁式架構",
+    title: "WithYou 親子平台",
+    subtitle: "Illustration × UI",
+
+    miniTech: "Layout：grid → responsive → UI system",
+    miniDesc: "建立一致的視覺與響應式版型",
+
+    desc: "插畫導向的親子互動平台。",
+    highlight: "RWD × UI Design",
 
     tech: ["SCSS", "Bootstrap", "jQuery"],
     cover: images["/src/assets/images/withyou.jpg"],
@@ -178,16 +219,20 @@ const projectsDetail = [
   },
 
   //////////////////////////////////////////////////
-  // RWD Showcase
+  // RWD
   //////////////////////////////////////////////////
   {
     id: "rwd",
     title: "RWD Layout Showcase",
     subtitle: "CSS Layout Practice",
-    desc: "整合 Flex、Grid 與 Masonry 的排版練習。",
-    highlight: "多版型實戰練習",
 
-    tech: ["HTML/CSS", "Flex", "Grid"],
+    miniTech: "Responsive：flex → grid → breakpoint",
+    miniDesc: "實現跨裝置的版面一致性",
+
+    desc: "多版型響應式排版練習。",
+    highlight: "Flex × Grid × Masonry",
+
+    tech: ["HTML/CSS"],
     cover: images["/src/assets/images/3.jpeg"],
 
     demo: "https://aitong0113.github.io/RWD-1/",

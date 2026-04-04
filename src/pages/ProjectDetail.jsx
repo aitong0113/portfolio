@@ -33,6 +33,8 @@ function ProjectDetail() {
           <div className="hero-right">
             <h1>{project.title}</h1>
             <p className="subtitle">{project.subtitle}</p>
+            <p className="mini-tech">{project.miniTech}</p>
+            <p className="mini-desc">{project.miniDesc}</p>
             <p className="desc">{project.desc}</p>
             <p className="highlight">{project.highlight}</p>
             <ul className="line-list">

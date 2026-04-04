@@ -34,15 +34,16 @@
 //////////////////////////////////////////////////////////
 
 .project-hero {
-  padding: 60px 32px 40px;
+   max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px;
   border-bottom: 1px solid #eee;
 
   .project__hero-product {
     display: flex;
     flex-direction: row;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 90px 32px 60px 32px; // 上方多 90px，避免被 Navbar 蓋住
+
+
     gap: 60px;
     align-items: center;
     justify-content: center;
@@ -111,6 +112,73 @@
         font-size: 12px;
       }
     }
+
+
+
+  h3 {
+    font-size: 28px;
+    color: $color-text;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    color: $color-primary;
+  }
+
+  .desc {
+    font-size: 16px;
+    color: $color-text-light;
+    line-height: 1.7;
+  }
+
+.highlight {
+  font-size: 13px;
+  color: $color-secondary-dark;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  align-self: center; // ⭐ 可選
+}
+
+.mini-tech {
+  font-size: 13px;
+  color: #333; // ❗加深
+  font-weight: 500; // ❗加一點重量
+  background: #f4f4f4;
+
+  border-left: 3px solid $color-primary; // 🔥加這條
+  padding: 10px 14px;
+}
+
+.mini-desc {
+  font-size: 13px;
+  color: #777;
+}
+  ////////////////////////////////////////////////////////
+  // Tags
+  ////////////////////////////////////////////////////////
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+    justify-content: center;
+
+    span {
+      font-size: 12px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: #f3f3f3;
+      color: $color-text-light;
+    }
+  }
 
     .cta {
       display: flex;

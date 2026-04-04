@@ -8,12 +8,15 @@ function Footer() {
     <footer className="footer">
       <div className="footer__inner">
         <h2 className="footer__title">
-          把想法變成<span>真正可用</span> 的產品
+          Let’s build <span>something real.</span>
         </h2>
 
         <p className="footer__desc">
-          期待未來有機會合作，一起創造更具影響力與品質的作品。<br />
-          歡迎找我聊聊合作機會、專案提案，或交流設計與技術心得。
+          專注於 React 與前端架構，
+          打造可維護且真正被使用的產品。
+          <br />
+          如果你正在找一位能把設計與工程整合的前端工程師，
+          或對我的專案有興趣，歡迎與我聯絡。
         </p>
 
         <div className="footer__buttons">
