@@ -14,7 +14,7 @@ const projectsDetail = [
   {
     id: "innersoul",
     title: "InnerSoul 心途",
-    subtitle: "React 狀態管理與資料流架構",
+    subtitle: "React 專案｜情緒紀錄 × 音樂陪伴應用平台",
 
     miniTech: "Redux 資料流：action → store → thunk → API → state → UI",
     miniDesc: "集中管理非同步資料流，確保跨頁與跨元件狀態一致性",
@@ -37,7 +37,7 @@ const projectsDetail = [
   {
     id: "calmaura-frontend",
     title: "CalmAura｜電商前台",
-    subtitle: "電商前端開發",
+    subtitle: "前端專案｜電商前台應用",
 
     miniTech: "購物流程：商品 → 購物車 → 結帳 → 訂單",
     miniDesc: "串接 Firebase 即時資料，確保購物流程資料同步",
@@ -58,7 +58,7 @@ const projectsDetail = [
   {
     id: "calmaura-admin",
     title: "CalmAura｜後台管理系統",
-    subtitle: "後台管理系統",
+    subtitle: "前端專案｜電商後台應用",
 
     miniTech: "資料流程：新增 → 讀取 → 更新 → 刪除",
     miniDesc: "建立商品、訂單與權限管理流程，提升資料一致性",
@@ -100,7 +100,7 @@ const projectsDetail = [
   {
     id: "yoga-admin",
     title: "靜心陰瑜伽｜後台",
-    subtitle: "Vue 後台系統",
+    subtitle: "Vue 3 × TypeScript 後台開發",
 
     miniTech: "管理流程：資料控管 → 驗證 → 更新",
     miniDesc: "建立資料管理與驗證機制，提升系統穩定性",
@@ -121,7 +121,7 @@ const projectsDetail = [
   {
     id: "draworigin",
     title: "繪初 DrawOrigin",
-    subtitle: "Laravel MVC 網站",
+    subtitle: "Laravel 專案｜插畫品牌網站",
 
     miniTech: "MVC 架構：路由 → 控制器 → 視圖",
     miniDesc: "透過 MVC 分層設計提升系統結構與可維護性",
@@ -204,7 +204,7 @@ const projectsDetail = [
   {
     id: "withyou",
     title: "WithYou 親子平台",
-    subtitle: "插畫互動網站",
+    subtitle: "前端專案｜繪畫陪伴平台",
 
     miniTech: "版面系統：Grid → 響應式 → UI 統一",
     miniDesc: "建立一致的視覺與響應式版型",

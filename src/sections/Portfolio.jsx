@@ -8,7 +8,7 @@ function Portfolio() {
       id: "innersoul",
       title: "InnerSoul 心途",
 
-      subtitle: "React 狀態管理與資料流架構設計",
+      subtitle: "React 專案｜情緒紀錄 × 音樂陪伴應用平台",
 
       desc: "以 React 建構情緒追蹤應用，透過 Redux Toolkit 管理全域狀態，解決跨頁與跨元件資料同步問題，建立可預測的資料流架構。",
 
