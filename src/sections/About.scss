@@ -5,7 +5,7 @@
    ========================= */
 
 .about {
-  background: #f3eee8;
+  background: #f3ede8;
 
   width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -64,6 +64,33 @@
     color: $color-text-light;
   }
 
+  .about__content {
+    text-align: left;
+    line-height: 2.5;
+    color: #5c5c5c;
+    margin-top: 48px;
+  }
+
+  .about__intro {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .about__list {
+    padding-left: 20px;
+    margin-bottom: 24px;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .about__highlight {
+    font-size: 16px;
+    color: #333;
+  }
+
   /* ===== 右側 ===== */
 
   &__right {
@@ -102,7 +129,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 26.5px; 
+    top: 26.5px;
     left: 0;
     right: 0;
     height: 2px;

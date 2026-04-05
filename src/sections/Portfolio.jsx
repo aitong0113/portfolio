@@ -8,15 +8,15 @@ function Portfolio() {
       id: "innersoul",
       title: "InnerSoul 心途",
 
-      subtitle: "State Management & Data Flow Architecture in React",
+      subtitle: "React 狀態管理與資料流架構設計",
 
       desc: "以 React 建構情緒追蹤應用，透過 Redux Toolkit 管理全域狀態，解決跨頁與跨元件資料同步問題，建立可預測的資料流架構。",
 
       // ⭐ 新增這兩個
-      miniTech: "Redux Flow: action → store → thunk → API → state → UI",
+      miniTech: "Redux資料流: action → store → thunk → API → state → UI",
       miniDesc: "將非同步資料流集中管理，避免跨元件狀態錯亂問題",
 
-      highlight: "Global State × Async Flow × Component Architecture",
+      highlight: "全域狀態 × 非同步資料流 × 元件化架構",
 
       tech: ["React", "Redux Toolkit", "React Router", "SCSS"],
 

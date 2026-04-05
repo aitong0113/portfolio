@@ -8,7 +8,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer__inner">
         <h2 className="footer__title">
-          Let’s build <span>something real.</span>
+          打造<span>可用且可擴展</span>的前端系統
         </h2>
 
         <p className="footer__desc">

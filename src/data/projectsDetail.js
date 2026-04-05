@@ -7,19 +7,20 @@ import innerSoulMD from "./innersoul.md?raw";
 
 
 const projectsDetail = [
+
   //////////////////////////////////////////////////
   // ⭐ InnerSoul
   //////////////////////////////////////////////////
   {
     id: "innersoul",
     title: "InnerSoul 心途",
-    subtitle: "React State Management Architecture",
+    subtitle: "React 狀態管理與資料流架構",
 
-    miniTech: "Redux Flow：action → store → thunk → API → state → UI",
+    miniTech: "Redux 資料流：action → store → thunk → API → state → UI",
     miniDesc: "集中管理非同步資料流，確保跨頁與跨元件狀態一致性",
 
-    desc: "以 React 建構情緒紀錄應用，整合音樂播放與日記 CRUD，建立可預測的資料流架構。",
-    highlight: "Global State × Async Flow × Component Architecture",
+    desc: "以 React 建構情緒紀錄應用，整合音樂播放與日記 CRUD，建立可預測且穩定的資料流架構。",
+    highlight: "全域狀態 × 非同步資料流 × 元件化架構",
 
     tech: ["React", "Redux Toolkit", "React Router", "SCSS"],
     cover: `${import.meta.env.BASE_URL}/InnerSoul.png`,
@@ -36,13 +37,13 @@ const projectsDetail = [
   {
     id: "calmaura-frontend",
     title: "CalmAura｜電商前台",
-    subtitle: "E-commerce Frontend",
+    subtitle: "電商前端開發",
 
-    miniTech: "User Flow：product → cart → checkout → order",
+    miniTech: "購物流程：商品 → 購物車 → 結帳 → 訂單",
     miniDesc: "串接 Firebase 即時資料，確保購物流程資料同步",
 
-    desc: "實作商品瀏覽、購物車與結帳流程，優化使用者購物體驗。",
-    highlight: "E-commerce Flow × Firebase Sync",
+    desc: "實作商品瀏覽、購物車與結帳流程，優化使用者購物體驗與操作流暢度。",
+    highlight: "電商流程 × 即時資料同步",
 
     tech: ["JavaScript", "Firebase", "RWD"],
     cover: images["/src/assets/images/CalmAura.jpeg"],
@@ -57,13 +58,13 @@ const projectsDetail = [
   {
     id: "calmaura-admin",
     title: "CalmAura｜後台管理系統",
-    subtitle: "Admin Dashboard System",
+    subtitle: "後台管理系統",
 
-    miniTech: "CRUD Flow：create → read → update → delete",
+    miniTech: "資料流程：新增 → 讀取 → 更新 → 刪除",
     miniDesc: "建立商品、訂單與權限管理流程，提升資料一致性",
 
-    desc: "提供訂單管理、營收圖表與權限控管功能。",
-    highlight: "Dashboard × Data Control × Chart",
+    desc: "提供訂單管理、營收圖表與權限控管功能，支援後台營運操作。",
+    highlight: "後台系統 × 資料控管 × 圖表分析",
 
     tech: ["JavaScript", "Firebase", "Chart"],
     cover: images["/src/assets/images/CalmAura2.jpeg"],
@@ -78,13 +79,13 @@ const projectsDetail = [
   {
     id: "yoga-frontend",
     title: "靜心陰瑜伽｜前台",
-    subtitle: "Vue 3 × TypeScript",
+    subtitle: "Vue 3 × TypeScript 前端開發",
 
-    miniTech: "Typed Flow：API → typed state → UI",
+    miniTech: "型別流程：API → 型別資料 → UI",
     miniDesc: "透過 TypeScript 強化資料結構與開發安全性",
 
-    desc: "實作商品分類、購物流程與型別安全開發。",
-    highlight: "Vue Composition API × Type Safety",
+    desc: "實作商品分類、搜尋與購物流程，並導入型別系統提升程式穩定性。",
+    highlight: "Vue 架構 × 型別安全",
 
     tech: ["Vue", "TypeScript", "Firebase"],
     cover: images["/src/assets/images/yoga.jpeg"],
@@ -99,13 +100,13 @@ const projectsDetail = [
   {
     id: "yoga-admin",
     title: "靜心陰瑜伽｜後台",
-    subtitle: "Vue Admin System",
+    subtitle: "Vue 後台系統",
 
-    miniTech: "Admin Flow：data control → validation → update",
-    miniDesc: "建立資料管理與驗證流程，提升系統穩定性",
+    miniTech: "管理流程：資料控管 → 驗證 → 更新",
+    miniDesc: "建立資料管理與驗證機制，提升系統穩定性",
 
-    desc: "支援商品、訂單與優惠券管理。",
-    highlight: "Admin CRUD × Data Consistency",
+    desc: "支援商品、訂單與優惠券管理，強化後台操作效率。",
+    highlight: "後台 CRUD × 資料一致性",
 
     tech: ["Vue", "TypeScript", "Firebase"],
     cover: images["/src/assets/images/yoga2.jpeg"],
@@ -120,13 +121,13 @@ const projectsDetail = [
   {
     id: "draworigin",
     title: "繪初 DrawOrigin",
-    subtitle: "Laravel MVC Website",
+    subtitle: "Laravel MVC 網站",
 
-    miniTech: "MVC：route → controller → view",
-    miniDesc: "透過 MVC 分層提升程式結構與可維護性",
+    miniTech: "MVC 架構：路由 → 控制器 → 視圖",
+    miniDesc: "透過 MVC 分層設計提升系統結構與可維護性",
 
-    desc: "建立插畫品牌網站與內容架構。",
-    highlight: "Laravel × SEO Structure",
+    desc: "建立插畫品牌網站與內容架構，優化 SEO 與資訊呈現。",
+    highlight: "Laravel × SEO 架構",
 
     tech: ["Laravel", "Blade"],
     cover: images["/src/assets/images/4.jpeg"],
@@ -140,13 +141,13 @@ const projectsDetail = [
   {
     id: "accounting",
     title: "日常記帳工具",
-    subtitle: "Finance Tracker",
+    subtitle: "記帳應用",
 
-    miniTech: "API Sync：input → request → Google Sheets",
+    miniTech: "資料同步：輸入 → API → Google Sheets",
     miniDesc: "將使用者資料同步至雲端表單",
 
-    desc: "支援收支分類與資料同步。",
-    highlight: "API Integration × Data Sync",
+    desc: "支援收支分類與資料紀錄，實現簡易記帳與雲端同步。",
+    highlight: "API 串接 × 資料同步",
 
     tech: ["JavaScript"],
     cover: images["/src/assets/images/banner.png"],
@@ -161,13 +162,13 @@ const projectsDetail = [
   {
     id: "dogage",
     title: "DogAge",
-    subtitle: "JS Interaction Tool",
+    subtitle: "互動工具",
 
-    miniTech: "Interaction：input → calculate → UI update",
+    miniTech: "互動流程：輸入 → 計算 → UI 更新",
     miniDesc: "透過 DOM 操作實現即時互動回饋",
 
-    desc: "練習事件處理與輸入驗證。",
-    highlight: "DOM × Event Handling",
+    desc: "練習事件處理與輸入驗證，建立即時互動功能。",
+    highlight: "DOM 操作 × 事件處理",
 
     tech: ["JavaScript"],
     cover: images["/src/assets/images/1.png"],
@@ -182,13 +183,13 @@ const projectsDetail = [
   {
     id: "mood-weather",
     title: "今日心天氣",
-    subtitle: "Emotion Interaction App",
+    subtitle: "情緒互動應用",
 
-    miniTech: "UX Flow：emotion → UI feedback",
-    miniDesc: "透過互動設計引導情緒覺察",
+    miniTech: "體驗流程：情緒輸入 → UI 回饋",
+    miniDesc: "透過互動設計引導使用者進行情緒覺察",
 
-    desc: "結合心理模型的情緒 UI 應用。",
-    highlight: "UX × Interaction",
+    desc: "結合心理概念與互動設計，打造情緒回饋 UI。",
+    highlight: "使用者體驗 × 互動設計",
 
     tech: ["JavaScript"],
     cover: images["/src/assets/images/2.png"],
@@ -203,13 +204,13 @@ const projectsDetail = [
   {
     id: "withyou",
     title: "WithYou 親子平台",
-    subtitle: "Illustration × UI",
+    subtitle: "插畫互動網站",
 
-    miniTech: "Layout：grid → responsive → UI system",
+    miniTech: "版面系統：Grid → 響應式 → UI 統一",
     miniDesc: "建立一致的視覺與響應式版型",
 
-    desc: "插畫導向的親子互動平台。",
-    highlight: "RWD × UI Design",
+    desc: "以插畫為主軸的親子互動平台，提升內容親和力。",
+    highlight: "RWD × 介面設計",
 
     tech: ["SCSS", "Bootstrap", "jQuery"],
     cover: images["/src/assets/images/withyou.jpg"],
@@ -223,14 +224,14 @@ const projectsDetail = [
   //////////////////////////////////////////////////
   {
     id: "rwd",
-    title: "RWD Layout Showcase",
-    subtitle: "CSS Layout Practice",
+    title: "RWD 排版展示",
+    subtitle: "響應式版型練習",
 
-    miniTech: "Responsive：flex → grid → breakpoint",
-    miniDesc: "實現跨裝置的版面一致性",
+    miniTech: "響應式：Flex → Grid → Breakpoint",
+    miniDesc: "實現跨裝置版面一致性",
 
-    desc: "多版型響應式排版練習。",
-    highlight: "Flex × Grid × Masonry",
+    desc: "練習多版型響應式設計，提升版面適應能力。",
+    highlight: "Flex × Grid × 瀑布流",
 
     tech: ["HTML/CSS"],
     cover: images["/src/assets/images/3.jpeg"],

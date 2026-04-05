@@ -12,7 +12,7 @@
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 
-  background-image: url("/hero.jpg");
+  background-image: url("/hero.png");
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -105,7 +105,7 @@
 
   /* ===== 標題 ===== */
   &__main-title {
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 12px;

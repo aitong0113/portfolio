@@ -17,40 +17,33 @@ function About() {
           </h2>
 
           <div className="about__content">
-            <p>
+            <p className="about__intro">
               我是 Abbie，專注於 <strong>React 前端開發</strong>，
-              具備設計 × 前端 × 心理學的跨域背景，
-              能從使用者需求出發，轉化為穩定且可維護的前端系統。
+              能將需求轉化為穩定且可維護的前端系統。
             </p>
 
-            <p>
-              熟悉 HTML、CSS、RWD、JavaScript，
-              並具備 <strong>API 串接與資料流設計經驗</strong>，
-              能獨立完成從 UI 實作、互動邏輯到部署的完整開發流程。
-            </p>
+            <ul className="about__list">
+              <li>
+                熟悉 <strong>React / Redux Toolkit</strong>，
+                具備狀態管理與資料流設計能力
+              </li>
+              <li>
+                具備 <strong>API 串接與非同步資料處理</strong>，
+                可完成完整開發流程
+              </li>
+              <li>
+                熟悉 <strong>元件化設計（Component-based）</strong>，
+                建立可維護與可擴展架構
+              </li>
+              <li>
+                具備 <strong>需求拆解與跨部門溝通能力</strong>
+              </li>
+            </ul>
 
-            <p>
-              使用 React 與 Redux Toolkit 建構應用，
-              熟悉元件化設計與狀態管理，
-              能打造具備 <strong>可維護性與擴展性</strong> 的前端架構。
-            </p>
-
-            <p>
-              結訓於中彰投分署全端工程師青年專班，
-              建立 Laravel、PHP 與 API 架構基礎，
-              目前持續深化 React 與 Node.js，
-              強化前端與後端整合能力。
-            </p>
-
-            <p>
-              過去設計與心理學背景，
-              使我在開發功能時能兼顧使用者行為與產品邏輯，
-              在技術實作中提升整體使用體驗品質。
-            </p>
-
-            <p>
-              我不只是實作介面，而是透過前端技術，
-              <strong>能將需求轉化為具備穩定性與可維護性的前端系統</strong>
+            <p className="about__highlight">
+              不只是實作功能，
+              而是將需求轉化為
+              <strong>具備結構與可維護性的前端系統</strong>
             </p>
           </div>
 
@@ -69,10 +62,26 @@ function About() {
             {/* ===== Timeline ===== */}
             <div className="timeline">
               {[
-                { year: "2014.06+", title: "Visual Design", desc: "視覺設計與品牌整合" },
-                { year: "2022.12+", title: "Psychology", desc: "心理學 × 使用者理解 × UX 思維" },
-                { year: "2025.06+", title: "Frontend", desc: "HTML / CSS / JavaScript 實作能力" },
-                { year: "2025.12~", title: "React & Node.js", desc: "專案實戰與前後端整合" },
+                {
+                  year: "2014.06+",
+                  title: "設計基礎",
+                  desc: "培養視覺表達與資訊結構能力"
+                },
+                {
+                  year: "2022.12+",
+                  title: "使用者理解",
+                  desc: "建立使用者行為洞察與產品思維"
+                },
+                {
+                  year: "2025.06+",
+                  title: "前端開發",
+                  desc: "專注 JavaScript 與 React 應用開發能力"
+                },
+                {
+                  year: "2025.12~",
+                  title: "工程能力整合",
+                  desc: "強化資料流設計與前後端整合能力"
+                }
               ].map((item, i) => (
                 <div key={i} className="timeline__item">
                   <div className="timeline__dot"></div>
@@ -87,29 +96,29 @@ function About() {
 
             {/* ===== 核心定位句（升級🔥） ===== */}
             <p className="journey-card__quote">
-              Bridging Design, Engineering, and Human Experience
+              將需求轉化為具可維護性與擴展性的前端系統
             </p>
 
             {/* ===== Stats ===== */}
             <div className="stats">
               <div className="stats__card">
-                <h3>10+</h3>
-                <p>Projects Completed</p>
+                <h3>5+</h3>
+                <p>完成專案數</p>
               </div>
 
               <div className="stats__card">
                 <h3>460h</h3>
-                <p>Full-Stack Training</p>
+                <p>全端開發訓練時數</p>
               </div>
 
               <div className="stats__card">
-                <h3>3×</h3>
-                <p>Design × Engineering × Psychology</p>
+                <h3>3+</h3>
+                <p>跨領域整合能力<br />（使用者 × 工程 × 設計）</p>
               </div>
 
               <div className="stats__card">
                 <h3>∞</h3>
-                <p>Passion for Building Meaningful Products</p>
+                <p>持續學習與產品開發動能</p>
               </div>
             </div>
 

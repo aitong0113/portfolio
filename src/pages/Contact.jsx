@@ -119,7 +119,6 @@ function ResumeModal({ onClose }) {
     `${import.meta.env.BASE_URL}/resume-3.png`,
     `${import.meta.env.BASE_URL}/resume-4.png`,
     `${import.meta.env.BASE_URL}/resume-5.png`,
-    `${import.meta.env.BASE_URL}/resume-6.png`,
   ];
 
   return (
@@ -296,10 +295,10 @@ function Contact() {
 
             <div className="resume-tags">
               {[
-                "Frontend Engineering",
-                "React & State Management",
-                "UI → Product Implementation",
-                "UX & Interaction Thinking",
+                "前端架構設計（Frontend Architecture）",
+                "React × 全域狀態管理（State Management）",
+                "需求拆解與產品實作（UI → Implementation）",
+                "互動邏輯設計（Interaction & UX）"
               ].map((t) => (
                 <span key={t}>{t}</span>
               ))}
