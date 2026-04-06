@@ -19,7 +19,7 @@ function Hero() {
         <div className="hero__content">
 
           <div className="hero__role">
-           前端工程師 <br /> React · Redux Toolkit · RESTful API · SCSS · Git
+           前端 x 設計 <br /> React · Redux Toolkit · RESTful API · SCSS · Git
           </div>
 
           <h1 className="hero__main-title">
