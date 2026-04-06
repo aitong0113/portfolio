@@ -17,6 +17,7 @@ function Navbar() {
       <div className={`nav-links${menuOpen ? " open" : ""}`}>
         <Link to="/" className={location.pathname === "/" ? "active" : ""} onClick={handleLinkClick}>關於</Link>
         <Link to="/portfolio" className={location.pathname.startsWith("/portfolio") ? "active" : ""} onClick={handleLinkClick}>作品</Link>
+        <Link to="/blog" className={location.pathname.startsWith("/blog") ? "active" : ""} onClick={handleLinkClick}>文章</Link>
         <Link to="/contact" className={location.pathname === "/contact" ? "active" : ""} onClick={handleLinkClick}>聯絡</Link>
       </div>
       <div className={`hamburger${menuOpen ? " open" : ""}`} onClick={() => setMenuOpen((prev) => !prev)}>

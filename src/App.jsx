@@ -53,6 +53,8 @@ function AnimatedRoutes() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/project/:id" element={<ProjectDetail />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={require('./pages/Blog').default()} />
+        <Route path="/blog/:slug" element={require('./pages/Post').default()} />
       </Routes>
     </div>
   );
