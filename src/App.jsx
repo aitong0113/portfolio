@@ -18,6 +18,8 @@ import ProjectDetail from "./pages/ProjectDetail";
 import Contact from "./pages/Contact";
 import About from "./sections/About";
 import Portfolio from "./pages/PortfolioList";
+import Blog from "./pages/Blog";
+import Post from "./pages/Post";
 
 // 🔥 滾動回頂
 function ScrollToTop() {
@@ -53,8 +55,8 @@ function AnimatedRoutes() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/project/:id" element={<ProjectDetail />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/blog" element={require('./pages/Blog').default()} />
-        <Route path="/blog/:slug" element={require('./pages/Post').default()} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<Post />} />
       </Routes>
     </div>
   );

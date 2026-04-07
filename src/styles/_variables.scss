@@ -1,38 +1,127 @@
-// 品牌色（來自 Hero 圖）
-// UI 主色：酒紅
-$color-primary: #a05c54; // 酒紅（右下角深色）
-$color-primary-dark: #7d3d36;
-$color-primary-light: #c08a82;
+// ============================================================
+// _variables.scss
+// Abbie Lin Portfolio — Design Token
+// ============================================================
 
-// 輔助色：藍灰、粉橘、橘黃
-$color-secondary: #bfcad6; // 藍灰
-$color-secondary-dark: #a7b5c2;
+
+// ─────────────────────────────────────────
+// Typography
+// ─────────────────────────────────────────
+$font-main    : 'Noto Sans TC', 'Helvetica Neue', Arial, sans-serif;
+$font-heading : 'Playfair Display', serif;
+
+
+// ─────────────────────────────────────────
+// Brand Colors
+// 來源：截圖 UI 實際色彩取樣
+// ─────────────────────────────────────────
+
+// 主色 — 酒紅 / 磚紅
+$color-primary       : #a05c54;   // 標題、active tag、h1/h2 強調
+$color-primary-dark  : #7d3d36;   // hover、深色強調
+$color-primary-light : #c08a82;   // 次要文字、border-left 裝飾
+
+// 輔助色 — 粉橘邊框 / 底色點綴
+$color-accent        : #c39389;   // 分隔線、h1 底線、h2 左邊框、tag border
+$color-accent-soft   : #eba88b;   // hover 點綴（橘黃偏暖）
+
+// 藍灰（保留，可用於未來 badge / 標記）
+$color-secondary      : #bfcad6;
+$color-secondary-dark : #a7b5c2;
 $color-secondary-light: #d6dde7;
-$color-accent: #e8a78c; // 粉橘
-$color-accent2: #ebc38b; // 橘黃點綴
 
-// 基礎底色
-$color-bg: #faf7f4; // 全站背景
-$color-surface: #f2ebe7; // 卡片 / 區塊底
-$color-border: #e1d0c7;
 
-$color-white: #ffffff;
+// ─────────────────────────────────────────
+// Surface & Background
+// ─────────────────────────────────────────
+$color-bg          : #faf7f4;   // 全站背景（米白）
+$color-surface     : #f3e6e0;   // 卡片底、code 背景、sidebar tip
+$color-surface-alt : #f4ece8;   // pre/code block 背景
+$color-border      : #e1d0c7;   // 一般邊框
+$color-white       : #ffffff;   // 卡片白底
 
-// 文字
-$color-text: #3a3a3a;
-$color-text-light: #7a7a7a;
 
-// 按鈕（主色為藍灰）
-$btn-bg: $color-primary;
-$btn-bg-hover: darken($btn-bg, 6%);
-$btn-text: $color-white;
-$btn-border: transparent;
+// ─────────────────────────────────────────
+// Text
+// ─────────────────────────────────────────
+$color-text         : #4a3a35;   // 主要內文（偏棕黑）
+$color-text-heading : #83564c;   // 文章標題（帶紅棕）
+$color-text-sub     : #8c7367;   // blockquote、說明文字
+$color-text-muted   : #835855;   // meta、日期、tag 文字
+$color-text-light   : #7c5c5c;   // 卡片描述文字
 
-// 間距
-$spacing-sm: 8px;
-$spacing-md: 16px;
-$spacing-lg: 24px;
-$spacing-xl: 40px;
 
-$font-main: 'Noto Sans TC', 'Helvetica Neue', Arial, sans-serif;
-$font-heading: 'Playfair Display', serif;
+// ─────────────────────────────────────────
+// Interactive — Tag & Button
+// ─────────────────────────────────────────
+
+// Tag（文章列表）
+$tag-bg        : #f5e6e6;
+$tag-color     : #925f51;
+$tag-bg-active : #a05c54;
+$tag-color-active: #ffffff;
+
+// Sidebar Tag
+$tag-sidebar-bg   : #f5e6e6;
+$tag-sidebar-color: #925f51;
+
+// 主按鈕（tag-filter active / CTA）
+$btn-bg       : $color-primary;
+$btn-bg-hover : $color-primary-dark;
+$btn-text     : $color-white;
+$btn-border   : transparent;
+
+// Accordion button
+$accordion-color      : #8b5d52;
+$accordion-hover-bg   : #eedcdb;
+$accordion-arrow-color: #b07568;
+
+
+// ─────────────────────────────────────────
+// Spacing
+// ─────────────────────────────────────────
+$spacing-xs : 4px;
+$spacing-sm : 8px;
+$spacing-md : 16px;
+$spacing-lg : 24px;
+$spacing-xl : 40px;
+$spacing-2xl: 56px;
+
+
+// ─────────────────────────────────────────
+// Border Radius
+// ─────────────────────────────────────────
+$radius-sm  : 4px;
+$radius-md  : 8px;
+$radius-lg  : 12px;
+$radius-xl  : 18px;
+$radius-pill: 20px;
+$radius-full: 9999px;
+
+
+// ─────────────────────────────────────────
+// Shadow
+// ─────────────────────────────────────────
+$shadow-card      : 0 2px 16px rgba(0, 0, 0, 0.06);
+$shadow-card-hover: 0 6px 24px rgba(236, 232, 232, 0.9);
+$shadow-img       : 0 2px 12px rgba(159, 92, 77, 0.08);
+
+
+// ─────────────────────────────────────────
+// Layout
+// ─────────────────────────────────────────
+$max-width-post   : 700px;
+$max-width-main   : 640px;
+$max-width-sidebar: 320px;
+$sidebar-min-width: 260px;
+
+$blog-gap          : $spacing-2xl;   // main ↔ sidebar 間距
+$blog-padding-v    : 56px;           // 上下留白
+$blog-padding-bottom: 80px;
+
+
+// ─────────────────────────────────────────
+// Breakpoints
+// ─────────────────────────────────────────
+$bp-tablet : 1100px;
+$bp-mobile :  700px;
