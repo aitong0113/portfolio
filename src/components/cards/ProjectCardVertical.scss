@@ -1,4 +1,15 @@
+
 @use "../../styles/variables" as *;
+.project-card-vertical {
+  max-width: 100%;
+  box-sizing: border-box;
+
+  @media (max-width: 600px) {
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 //////////////////////////////////////////////////
 // 🌿 卡片（基礎）

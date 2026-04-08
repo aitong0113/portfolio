@@ -1,6 +1,6 @@
 [
   {
-    "slug": "01-react-redux-player-data-flow-design",
+    "slug": "01",
     "title": "InnerSoul 實戰｜播放器資料流設計：用 Redux 建立可預測狀態",
     "date": "2026-04-06",
     "description": "透過 Redux 建立可預測的播放狀態管理，並整合訂閱邏輯與 UI 行為",
@@ -10,7 +10,7 @@
     "tags": ["React", "Redux", "State Management"]
   },
   {
-    "slug": "02-api-to-ui-diary-data-flow-design",
+    "slug": "02",
     "title": "InnerSoul 實戰｜Diary 資料流設計：從 API 到 UI 的狀態整合",
     "date": "2026-04-07",
     "description": "如何設計前端資料流，讓 API、State 與 UI 保持一致",
@@ -20,7 +20,7 @@
     "tags": ["React", "Data Flow", "API Design"]
   },
   {
-    "slug": "04-ui-state-design-loading-empty-error",
+    "slug": "04",
     "title": "InnerSoul 實戰｜UI 狀態設計：用 loading、empty、error 讓畫面更穩定",
     "date": "2026-04-07",
     "description": "從 Diary 與播放功能的實作經驗出發，整理讓畫面穩定的 UI 狀態設計方式",
@@ -30,7 +30,7 @@
     "tags": ["React", "UI State", "Frontend"]
   },
   {
-    "slug": "03-react-state-splitting-ui-state-machine",
+    "slug": "03",
     "title": "InnerSoul 實戰｜會員權限設計：整合播放與日記功能限制",
     "date": "2026-04-07",
     "description": "如何把會員方案、日記權限與播放限制整合成一致的前端資料流與判斷邏輯",

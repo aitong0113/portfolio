@@ -18,18 +18,25 @@ function Post() {
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    const base = import.meta.env.BASE_URL || "/";
-    fetch(`${base}posts/${slug}.md`)
-      .then(res => res.text())
+    fetch(`./posts/${slug}.md`)
+      .then(res => {
+        if (!res.ok) {
+          throw new Error("文章不存在或載入失敗");
+        }
+        return res.text();
+      })
       .then(raw => {
         const parsed = fm(raw);
-        // 防呆：確保 body 是字串
         let body = parsed.body;
         if (typeof body !== "string") {
           body = "[內容格式錯誤，請檢查 markdown frontmatter 或內容格式]";
         }
         setContent(body);
         setMeta(parsed.attributes || {});
+      })
+      .catch(() => {
+        setContent("");
+        setMeta({ title: "文章不存在", description: "找不到這篇文章，請確認網址是否正確。" });
       });
   }, [slug]);
 

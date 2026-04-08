@@ -1,4 +1,27 @@
 @use "../styles/_variables.scss" as *;
+// =============================
+// Blog 文章列表 RWD
+// =============================
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 32px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 0 4px;
+  }
+}
+
+.blog-card {
+  max-width: 100%;
+  box-sizing: border-box;
+}
 
 // ============================================================
 // blog.scss
@@ -486,7 +509,17 @@
   font-size: 13px;
   margin-right: 6px;
   font-weight: 500;
+  margin-bottom: 4px;
+  word-break: keep-all;
 }
+
+.blog-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  margin-top: 2px;
+}
+
 
 .blog-card__title {
   font-size: 22px;
