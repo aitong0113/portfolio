@@ -18,7 +18,7 @@ function Post() {
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}/posts/${slug}.md`)
+    fetch(`${import.meta.env.BASE_URL}content/${slug}.md`)
       .then(res => {
         if (!res.ok) {
           throw new Error("文章不存在或載入失敗");
